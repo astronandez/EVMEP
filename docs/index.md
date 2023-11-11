@@ -9,7 +9,7 @@ Intelligent traffic systems (ITS) are becoming more common as cities continue to
 
 # Required Submissions
 
-* [Proposal](/202_PROJECT/docs/proposal)
-* [Midterm Checkpoint Presentation Slides](/202_PROJECT/) Work in progress
-* [Final Presentation Slides](/202_PROJECT/) Work in progress
-* [Final Report](/202_PROJECT//docs/report) Work in progress
+* [Proposal](proposal)
+* [Midterm Checkpoint Presentation Slides](/) Work in progress
+* [Final Presentation Slides](/) Work in progress
+* [Final Report](report) Work in progress
