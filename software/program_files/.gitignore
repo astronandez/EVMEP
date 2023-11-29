@@ -1,0 +1,10 @@
+# Ignore all
+/.idea/
+/__pycache__/
+/share/
+/Scripts/
+/Lib/
+
+# What not to ignore
+!* .py
+!* .ipynb
