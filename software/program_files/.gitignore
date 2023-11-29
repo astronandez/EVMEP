@@ -4,6 +4,8 @@
 /share/
 /Scripts/
 /Lib/
+/pyvenv.cfg
+/Videos/
 
 # What not to ignore
 !* .py
