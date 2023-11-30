@@ -7,11 +7,14 @@ from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import StandardScaler
 
 
-df = pd.read_csv(r'C:\Users\Marc Hernandez\Documents\UCLA\ECE 202A\astronandez.github.io\data\custom_vehicle_data.csv')
+df = pd.read_csv(r'C:\Users\Marc Hernandez\Documents\UCLA\ECE 202A\EVMEP\data\custom_vehicle_data.csv')
 vehicle_types = df['body_style']
 df['body_style'] = pd.Categorical(df['body_style'])
 df['body_style_code'] = df['body_style'].cat.codes
-#print(df['body_style_code'])
+
+unique_body_style = df['body_style'].unique()
+for i in unique_body_style:
+    print(i)
 # numeric_vehicle_info = df.drop(['body_style'], axis=1)
 numeric_vehicle_info = df.drop(['body_style', "cargo_capacity_in", "horsepower_rpm", "torque_rpm", "towing_capacity_lbs","payload_capacity_lbs"], axis=1)
 numeric_vehicle_info = numeric_vehicle_info.dropna(thresh=(0.9 * len(numeric_vehicle_info.columns)))
