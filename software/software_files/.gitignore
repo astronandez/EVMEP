@@ -1,0 +1,12 @@
+# Ignore all
+/.idea/
+/__pycache__/
+/share/
+/Scripts/
+/Lib/
+/pyvenv.cfg
+/Videos/
+
+# What not to ignore
+!* .py
+!* .ipynb
