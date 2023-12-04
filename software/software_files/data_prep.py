@@ -5,6 +5,13 @@ import numpy as np
 import cv2 as cv
 from sklearn import preprocessing
 from tqdm import tqdm
+from torch import tensor
+from torchvision.ops import box_convert
+import pybboxes as pbx
+
+#For debugging set debug_mode to True and the num_to_test equal to the number of entries desired
+debug_mode = False
+num_to_test = 10
 
 parser = argparse.ArgumentParser(description='PyTorch ImageNet Training')
 
@@ -15,8 +22,14 @@ parser.add_argument('--annotation_path', default='YoloFormatData/',
                     help='path to save annotation')
 
 def pascal_voc_to_yolo(x1, y1, x2, y2, image_w, image_h):
-    return [((x2 + x1)/(2*image_w)), ((y2 + y1)/(2*image_h)), (x2 - x1)/image_w, (y2 - y1)/image_h]
+    voc_box = (x1, y1, x2, y2)
+    yolobox = pbx.convert_bbox(voc_box, from_type="voc", to_type="yolo", image_size=[image_w, image_h])
+    # return [((x2 + x1)/(2*image_w)), ((y2 + y1)/(2*image_h)), (x2 - x1)/image_w, (y2 - y1)/image_h]
+    return yolobox
 
+def voc_to_yolo(xyxy, image_w, image_h):
+    yolobox = pbx.convert_bbox(xyxy, from_type="voc", to_type="yolo", image_size=[image_w, image_h])
+    return yolobox
 
 def main():
     car_types = pd.read_csv('YoloFormatData/test.csv')
@@ -38,19 +51,41 @@ def main():
     filelist = sorted(filelist)
     labellist = sorted(labellist)
 
-    # filelist = filelist[:1000]
-    # labellist = labellist[:1000]
+    if(debug_mode):
+        filelist = filelist[:num_to_test]
+        labellist = labellist[:num_to_test]
 
-    img_w = []
-    img_h = []
+    x1_yolo = []
+    y1_yolo = []
+    x2_yolo = []
+    y2_yolo = []
+    junk_image_pile = []
+    junk_label_pile = []
 
     for i in tqdm(range(len(filelist))):
         current_image = cv.imread(f"{filelist[i]}")
-        w, h = current_image.shape[:2]
-        img_w.append(w)
-        img_h.append(h)
-        # if i == 1000:
-        #     break
+        h, w, _ = current_image.shape
+        result = pd.read_csv(labellist[i], header=None).loc[2].values[0].split(' ')
+        x1, y1, x2, y2 = map(float, result)
+        if (x1 > 0 and x2 > x1 and x2 <= w and
+            y1 > 0 and y2 > y1 and y2 <= h):
+            diffw = x2 - x1
+            diffh = y2 - y1
+            cx = ((x1 + (diffw/2)) / w)
+            cy = ((y1 + (diffh/2)) / h)
+            nw = ((diffw) / w)
+            nh = ((diffh) / h)
+            x1_yolo.append(cx)
+            y1_yolo.append(cy)
+            x2_yolo.append(nw)
+            y2_yolo.append(nh)
+        else:
+            junk_image_pile.append(filelist[i])
+            junk_label_pile.append(labellist[i])
+
+    for i in tqdm(range(len(junk_image_pile))):
+        filelist.remove(junk_image_pile[i])
+        labellist.remove(junk_label_pile[i])
 
     filelist = [x.replace(img_path, '') for x in filelist]
     full_data_single = pd.DataFrame(filelist, columns=['image_name'])
@@ -73,56 +108,21 @@ def main():
             if value in car_types[j+1].values:
                 lbs.at[index, 'car_type'] = j+1
 
-        # if index == 1000:
-        #     break
-
     full_data['car_type'] = lbs['car_type']
-    print(full_data.head())
-
-    x1s = []
-    y1s = []
-    x2s = []
-    y2s = []
-
-    print('Read annotations')
-    for i in tqdm(range(len(labellist))):
-        result = pd.read_csv(labellist[i], header=None).loc[2].values[0].split(' ')
-        result = [int(x) for x in result]
-        x1s.append(result[0])
-        y1s.append(result[1])
-        x2s.append(result[2])
-        y2s.append(result[3])
-        # if i == 1000:
-        #     break
-
-    x1_yolo = []
-    y1_yolo = []
-    x2_yolo = []
-    y2_yolo = []
-
-    for i in tqdm(range(len(x2s))):
-        yolo_coords = pascal_voc_to_yolo(x1s[i], y1s[i], x2s[i], y2s[i], img_w[i], img_h[i])
-        x1_yolo.append(yolo_coords[0])
-        y1_yolo.append(yolo_coords[1])
-        x2_yolo.append(yolo_coords[2])
-        y2_yolo.append(yolo_coords[3])
-        # if i == 1000:
-        #     break
 
     full_data['x_1'] = x1_yolo
     full_data['y_1'] = y1_yolo
     full_data['x_2'] = x2_yolo
     full_data['y_2'] = y2_yolo
-    full_data['image_w'] = img_w
-    full_data['image_h'] = img_h
 
     yolo_full_data = full_data[['image_name', 'car_type', 'x_1', 'y_1', 'x_2', 'y_2']]
-    # yolo_full_data = full_data[['car_type', 'x_1', 'y_1', 'x_2', 'y_2']]
+    yolo_img_data = full_data['image_name']
 
     if not os.path.isdir(args.annotation_path):
         os.mkdir(args.annotation_path)
 
     yolo_full_data.to_csv(args.annotation_path + 'yolo_formated_data.txt', index=False)
+    yolo_img_data.to_csv(args.annotation_path + 'yolo_image_data.txt', index=False)
 
 if __name__ == '__main__':
     main()

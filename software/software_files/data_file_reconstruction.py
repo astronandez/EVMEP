@@ -38,12 +38,12 @@ def reformat_directory(source_dir, destination_dir, folder_name, file_based=True
             # Process each subsequent line
             for line in file:
                 column = [line.strip().split(',')]
-                column[0][2:6] = [float(x) for x in column[0][1:6]]
+                column[0][2:6] = [float(x) for x in column[0][2:6]]
                 column[0][0] = column[0][0].replace(".jpg", ".txt")
                 new_file_name = f'{column[0][0]}'
 
                 string_data = f'{column[0][1]}' + ' ' + f'{column[0][2]}' + ' ' + f'{column[0][3]}' + ' ' + f'{column[0][4]}' + ' ' + f'{column[0][5]}'
-
+                print(string_data)
                 file_dest = os.path.join(new_subfolder, new_file_name)
                 with open(file_dest, 'w') as out_file:
                     out_file.write(string_data)
