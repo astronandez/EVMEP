@@ -2,13 +2,7 @@ from typing import Tuple, List, Optional
 import cv2
 import sys
 import numpy as np
-import torch
-import onnxruntime as rt
-import onnx
 import matplotlib.pyplot as plt
-import matplotlib as mpl
-from onnx.checker import check_model
-import glob
 
 def generate_color_mapping(num_classes: int) -> List[Tuple[int, ...]]:
     """Generate a unique BGR color for each class
@@ -16,7 +10,7 @@ def generate_color_mapping(num_classes: int) -> List[Tuple[int, ...]]:
     :param num_classes: The number of classes in the dataset.
     :return:            List of RGB colors for each class.
     """
-    cmap = mpl.cm.get_cmap("gist_rainbow", num_classes)
+    cmap = plt.cm.get_cmap("gist_rainbow", num_classes)
     colors = [cmap(i, bytes=True)[:3][::-1] for i in range(num_classes)]
     return [tuple(int(v) for v in c) for c in colors]
 
@@ -147,43 +141,31 @@ def compute_brightness(color: Tuple[int, int, int]) -> float:
     """
     return (0.299 * color[0] + 0.587 * color[1] + 0.114 * color[0]) / 255
 
+def show_predictions_from_flat_format(image, predictions, name):
+    [flat_predictions] = predictions
 
-# image = cv2.imread('test_image_crop.jpg')
+    image = image.copy()
+    class_names = ['MPV', 'SUV', 'sedan', 'hatchback', 'minibus', 'fastback', 'estate',
+               'pickup', 'hardtop convertible', 'sports', 'crossover', 'convertible']
+    color_mapping = generate_color_mapping(len(class_names))
 
-image = cv2.resize(image, (320, 320))
-image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
-image_bchw = np.transpose(np.expand_dims(image, 0), (0, 3, 1, 2))
-onnx_model = onnx.load('yolo_nas_s_int8_with_calibration_v2.onnx')
+    for (sample_index, x1, y1, x2, y2, class_score, class_index) in flat_predictions[flat_predictions[:, 0] == 0]:
+        class_index = int(class_index)
+        image = draw_box_title(
+                    image_np=image,
+                    x1=int(x1),
+                    y1=int(y1),
+                    x2=int(x2),
+                    y2=int(y2),
+                    class_id=class_index,
+                    class_names=class_names,
+                    color_mapping=color_mapping,
+                    box_thickness=2,
+                    pred_conf=class_score,
+                )
 
-session = rt.InferenceSession(onnx_model.SerializeToString(), providers=["CPUExecutionProvider"])
-inname = [o.name for o in session.get_inputs()]
-outname = [o.name for o in session.get_outputs()]
-inp = {inname[0]: image_bchw}
-result = session.run(outname, inp)
-
-[flat_predictions] = result
-
-image_cop = image.copy()
-class_names = ['MPV', 'SUV', 'sedan', 'hatchback', 'minibus', 'fastback', 'estate',
-           'pickup', 'hardtop convertible', 'sports', 'crossover', 'convertible']
-color_mapping = generate_color_mapping(len(class_names))
-
-for (sample_index, x1, y1, x2, y2, class_score, class_index) in flat_predictions[flat_predictions[:, 0] == 0]:
-    class_index = int(class_index)
-    image_cop = draw_box_title(
-                image_np=image_cop,
-                x1=int(x1),
-                y1=int(y1),
-                x2=int(x2),
-                y2=int(y2),
-                class_id=class_index,
-                class_names=class_names,
-                color_mapping=color_mapping,
-                box_thickness=2,
-                pred_conf=class_score,
-            )
-
-plt.figure(figsize=(8, 8))
-plt.imshow(image_cop)
-plt.tight_layout()
-plt.show()
+    plt.figure(figsize=(8, 8))
+    # plt.imshow(image)
+    plt.tight_layout()
+    #plt.show()
+    plt.imsave(f"Z:/Test_Images/{name}", image)
