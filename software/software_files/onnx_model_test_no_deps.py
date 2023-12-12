@@ -6,6 +6,7 @@ import torch
 import onnxruntime as rt
 import onnx
 import matplotlib.pyplot as plt
+import matplotlib as mpl
 from onnx.checker import check_model
 
 def generate_color_mapping(num_classes: int) -> List[Tuple[int, ...]]:
@@ -14,7 +15,7 @@ def generate_color_mapping(num_classes: int) -> List[Tuple[int, ...]]:
     :param num_classes: The number of classes in the dataset.
     :return:            List of RGB colors for each class.
     """
-    cmap = plt.cm.get_cmap("gist_rainbow", num_classes)
+    cmap = mpl.cm.get_cmap("gist_rainbow", num_classes)
     colors = [cmap(i, bytes=True)[:3][::-1] for i in range(num_classes)]
     return [tuple(int(v) for v in c) for c in colors]
 
@@ -145,13 +146,15 @@ def compute_brightness(color: Tuple[int, int, int]) -> float:
     """
     return (0.299 * color[0] + 0.587 * color[1] + 0.114 * color[0]) / 255
 
-image = cv2.imread('Z:/CompCarsYOLO/model/content/1s_image.jpg')
+
+
+image = cv2.imread('test_image_crop.jpg')
 image = cv2.resize(image, (320, 320))
 image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 image_bchw = np.transpose(np.expand_dims(image, 0), (0, 3, 1, 2))
 onnx_model = onnx.load('yolo_nas_s_int8_with_calibration_v2.onnx')
 
-session = rt.InferenceSession(onnx_model.SerializeToString(), providers=["CUDAExecutionProvider", "CPUExecutionProvider"])
+session = rt.InferenceSession(onnx_model.SerializeToString(), providers=["CPUExecutionProvider"])
 inname = [o.name for o in session.get_inputs()]
 outname = [o.name for o in session.get_outputs()]
 inp = {inname[0]: image_bchw}
