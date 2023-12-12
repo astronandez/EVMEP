@@ -44,7 +44,6 @@ def show_predictions_from_flat_format(image, predictions):
     color_mapping = DetectionVisualization._generate_color_mapping(len(class_names))
 
     for (sample_index, x1, y1, x2, y2, class_score, class_index) in flat_predictions[flat_predictions[:, 0] == 0]:
-    # for sample_index, (x1, y1, x2, y2, class_score, class_index) in enumerate(predictions):
         class_index = int(class_index)
         image = DetectionVisualization.draw_box_title(
                     image_np=image,
