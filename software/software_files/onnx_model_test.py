@@ -21,20 +21,4 @@ outname = [o.name for o in session.get_outputs()]
 inp = {inname[0]: image_bchw}
 result = session.run(outname, inp)
 
-# output = torch.from_numpy(result)
-# out = [non_max_suppression(output, overlapThresh=0.8)]
-
-# for i,(x0,y0,x1,y1,score,cls_id) in enumerate(out):
-#       box = np.array([x0,y0,x1,y1])
-#       box -= np.array(dwdh*2)
-#       box /= ratio
-#       box = box.round().astype(np.int32).tolist()
-#       cls_id = int(cls_id)
-#       score = round(float(score),3)
-#       name = names[cls_id]
-#       color = colors[name]
-#       name += ' '+str(score)
-#       cv2.rectangle(img,box[:2],box[2:],color,2)
-#       cv2.putText(img,name,(box[0], box[1] - 2),cv2.FONT_HERSHEY_SIMPLEX,0.75,[225, 255, 255],thickness=2)
-
 show_predictions_from_flat_format(image, result)
