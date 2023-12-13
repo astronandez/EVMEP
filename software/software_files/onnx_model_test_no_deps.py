@@ -148,11 +148,14 @@ def compute_brightness(color: Tuple[int, int, int]) -> float:
     return (0.299 * color[0] + 0.587 * color[1] + 0.114 * color[0]) / 255
 
 
-# image = cv2.imread('test_image_crop.jpg')
-
+image = cv2.imread('1s_image_crop.jpg')
+print(image.shape)
 image = cv2.resize(image, (320, 320))
+print(image.shape)
 image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+print(image.shape)
 image_bchw = np.transpose(np.expand_dims(image, 0), (0, 3, 1, 2))
+print(image_bchw.shape)
 onnx_model = onnx.load('yolo_nas_s_int8_with_calibration_v2.onnx')
 
 session = rt.InferenceSession(onnx_model.SerializeToString(), providers=["CPUExecutionProvider"])
@@ -163,27 +166,28 @@ result = session.run(outname, inp)
 
 [flat_predictions] = result
 
-image_cop = image.copy()
+image = image.copy()
 class_names = ['MPV', 'SUV', 'sedan', 'hatchback', 'minibus', 'fastback', 'estate',
-           'pickup', 'hardtop convertible', 'sports', 'crossover', 'convertible']
+               'pickup', 'hardtop convertible', 'sports', 'crossover', 'convertible']
 color_mapping = generate_color_mapping(len(class_names))
 
 for (sample_index, x1, y1, x2, y2, class_score, class_index) in flat_predictions[flat_predictions[:, 0] == 0]:
     class_index = int(class_index)
-    image_cop = draw_box_title(
-                image_np=image_cop,
-                x1=int(x1),
-                y1=int(y1),
-                x2=int(x2),
-                y2=int(y2),
-                class_id=class_index,
-                class_names=class_names,
-                color_mapping=color_mapping,
-                box_thickness=2,
-                pred_conf=class_score,
-            )
+    image = draw_box_title(
+        image_np=image,
+        x1=int(x1),
+        y1=int(y1),
+        x2=int(x2),
+        y2=int(y2),
+        class_id=class_index,
+        class_names=class_names,
+        color_mapping=color_mapping,
+        box_thickness=2,
+        pred_conf=class_score,
+    )
 
 plt.figure(figsize=(8, 8))
-plt.imshow(image_cop)
+plt.imshow(image)
 plt.tight_layout()
 plt.show()
+# plt.imsave(f"Z:/Test_Images/{name}", image)

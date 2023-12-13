@@ -13,7 +13,8 @@ def show_predictions_from_batch_format(image, predictions):
     pred_classes = pred_classes[0, :num_predictions]
 
     image = image.copy()
-    class_names = COCO_DETECTION_CLASSES_LIST
+    class_names = ['MPV', 'SUV', 'sedan', 'hatchback', 'minibus', 'fastback', 'estate',
+               'pickup', 'hardtop convertible', 'sports', 'crossover', 'convertible']
     color_mapping = DetectionVisualization._generate_color_mapping(len(class_names))
 
     for (x1, y1, x2, y2, class_score, class_index) in zip(pred_boxes[:, 0], pred_boxes[:, 1], pred_boxes[:, 2], pred_boxes[:, 3], pred_scores, pred_classes):

@@ -8,8 +8,6 @@ import onnx
 from onnx.checker import check_model
 from annotating_functions import *
 import time
-...
-start = time.perf_counter()
 
 test_images = []
 onnx_model = onnx.load('yolo_nas_s_int8_with_calibration_v2.onnx')

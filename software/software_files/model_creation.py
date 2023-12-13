@@ -38,12 +38,12 @@ def get_our_model():
 
 def ex_model(val_data):
     export_result = best_model.export(
-        "yolo_nas_s_int8_with_calibration_v2.onnx",
+        "yolo_nas_s_int8_with_calibration_v4.onnx",
         confidence_threshold = 0.4,
         nms_threshold = 0.5,
         num_pre_nms_predictions = 100,
         max_predictions_per_image = 1,
-        output_predictions_format=DetectionOutputFormatMode.FLAT_FORMAT,
+        output_predictions_format=DetectionOutputFormatMode.BATCH_FORMAT,
         quantization_mode=ExportQuantizationMode.INT8,
         calibration_loader=val_data
     )
@@ -53,11 +53,11 @@ def ex_model(val_data):
 class config:
     #trainer params
     CHECKPOINT_DIR = 'Z:/CompCarsYOLO/model/content/checkpoints' #specify the path you want to save checkpoints to
-    EXPERIMENT_NAME = 'yolo_car_type_identifier_qat' #specify the experiment name
+    EXPERIMENT_NAME = 'final_car_type_identifier_qat' #specify the experiment name
 
     #dataset params
-    DATA_DIR = 'Z:/CompCarsYOLO/model/content/vehicle-body-style-dataset-2-yolov5/' #parent directory to where data lives
-    DATA_NAME = 'vehicle-body-style-dataset-2-yolov5'
+    DATA_DIR = 'Z:/CompCarsYOLO/model/content/vehicle-body-style-barred/' #parent directory to where data lives
+    DATA_NAME = 'vehicle-body-style-barred'
 
     TRAIN_IMAGES_DIR = 'train/images' #child dir of DATA_DIR where train images are
     TRAIN_LABELS_DIR = 'train/labels' #child dir of DATA_DIR where train labels are
@@ -77,7 +77,7 @@ class config:
     #dataloader params - you can add whatever PyTorch dataloader params you have
     #could be different across train, val, and test
     DATALOADER_PARAMS = {
-        'batch_size':16,
+        'batch_size':8,
         'num_workers':2
     }
 
@@ -90,7 +90,7 @@ best_model = get_our_model()
 
 if __name__ == '__main__':
     export_result = ex_model(val_data)
-    print(export_result.output, file=sys.stderr)
+    print(export_result, file=sys.stderr)
 
 # image = load_image('Z:/CompCarsYOLO/model/content/single_vehicle_test.jpg')
 # image = cv2.resize(image, (export_result.input_image_shape[1], export_result.input_image_shape[0]))
