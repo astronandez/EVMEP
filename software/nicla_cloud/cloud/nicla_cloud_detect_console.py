@@ -2,6 +2,8 @@ import cv2
 import numpy as np
 import tensorflow as tf
 
+from simple_weight_estimation import *
+
 class_names = ['Convertible', 'Crossover', 'Fastback', 'Hardtop Convertible', 'Hatchback', 'MPV', 'Minibus', 'Pickup Truck', 'SUV', 'Sedan', 'Sports', 'Wagon']
 
 def load_tf_model(model_path):
@@ -56,7 +58,9 @@ def print_detections(results, class_names):
         if obj_score > 0.9:  # Adjust threshold as needed
             class_id = np.argmax(class_probs)
             class_label = class_names[class_id]
-            print(f"Detected: {class_label} with confidence {obj_score:.2f}")
+            weight = estimate_vechicle_weight(class_label)
+            print(f"    Class: {class_label}, Probability: {class_probs[class_id]:.2f}, lbs: {weight}")
+            #print(f"Detected: {class_label} with confidence {obj_score:.2f}")
 
 def main():
     rtsp_url = "rtsp://10.1.1.89:554"

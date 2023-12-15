@@ -4,6 +4,8 @@ import tensorflow as tf
 import os
 import cv2
 
+from simple_weight_estimation import *
+
 # Set FFmpeg preferences to use UDP
 os.environ["OPENCV_FFMPEG_CAPTURE_OPTIONS"] = "rtsp_transport;udp"
 
@@ -61,7 +63,9 @@ def print_detections(results, class_names):
         if obj_score > 0.7:  # Adjust threshold as needed
             class_id = np.argmax(class_probs)
             class_label = class_names[class_id]
-            print(f"Detected: {class_label} with confidence {obj_score:.2f}")
+            weight = estimate_vechicle_weight(class_label)
+            print(f"    Class: {class_label}, Probability: {class_probs[class_id]:.2f}, lbs: {weight}")
+            #print(f"Detected: {class_label} with confidence {obj_score:.2f}")
 
 def main():
     #rtsp_url = "rtsp://10.1.1.89:554"
