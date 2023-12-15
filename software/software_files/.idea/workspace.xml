@@ -5,8 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2509d36-61db-4600-bc1f-dbcbee0782f1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exported Models/yolo_nas_s_int8_with_calibration.onnx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exported Models/yolo_nas_s_int8_with_calibration_v2.onnx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exported Models/yolo_nas_s_int8_with_calibration_v4.onnx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Create_CSV_Dataset.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PCA_Script.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PTQ and QAT.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/annotating_functions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_data_config.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/helpful_data_management/text_to_csv_convert.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/yolo_nas_s_int8_with_calibration.onnx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/yolo_nas_s_int8_with_calibration_v2.onnx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/yolo_nas_s_int8_with_calibration_v4.onnx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/onnx_batched_images_test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple_weight_estimation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model Software/simple_weight_estimation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/visualization_model_predictions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weight_to_model.csv" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +78,7 @@
       <recent name="C:\Users\Marc Hernandez\Documents\UCLA\ECE 202A\EVMEP\software\software_files" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Marc Hernandez\Documents\UCLA\ECE 202A\EVMEP\software\software_files\Model Software" />
       <recent name="C:\Users\Marc Hernandez\Documents\UCLA\ECE 202A\EVMEP\software\software_files" />
       <recent name="C:\Users\Marc Hernandez\Documents\UCLA\ECE 202A\EVMEP\software\software_files\junkfolder" />
       <recent name="C:\Users\Marc Hernandez\Documents\UCLA\ECE 202A\EVMEP\software\software_files\helpful_data_management" />
