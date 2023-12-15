@@ -9,7 +9,7 @@ def load_tf_model(model_path):
     model = tf.saved_model.load(model_path)
 
     # Find model ouput structure
-    print(model.signatures['serving_default'].structured_outputs)
+    #print(model.signatures['serving_default'].structured_outputs)
 
     return model
 
@@ -38,7 +38,7 @@ def draw_boxes(frame, results, class_names):
     for detection in detections:
         x_center, y_center, width, height, obj_score, *class_probs = detection[:5 + len(class_names)]
 
-        if obj_score > 0.8:  # Adjust threshold as needed
+        if obj_score > 0.9:  # Adjust threshold as needed
             # Convert center coordinates to corner coordinates
             xmin = int(x_center - width / 2)
             xmax = int(x_center + width / 2)
@@ -58,8 +58,11 @@ def draw_boxes(frame, results, class_names):
     cv2.imshow('Object Detection', frame)
             
 def main():
-    # rtsp_url = "rtsp://10.1.1.89:554"
-    rtsp_url =  "rtsp://192.168.1.188:554"
+    #rtsp_url = "rtsp://10.1.1.89:554"
+    #rtsp_url =  "rtsp://192.168.1.188:554"
+    # rtsp_url = "rtsp://172.91.64.236:8554/unicast"
+
+    rtsp_url = "rtsp://192.168.254.78:8554/unicast"
     model_path = '/Users/tilboon/Desktop/content/yolov5/best_tf'
     input_size = (320, 320)  # Adjust to your model's input size
 

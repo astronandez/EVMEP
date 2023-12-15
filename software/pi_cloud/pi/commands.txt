@@ -1,0 +1,9 @@
+# start rtsp stream
+v4l2rtspserver -F 10 -H 240 -W 320 -P 8554 &
+# kill rtsp stream
+ps -aux | grep v4l2rtspserver
+sudo kill <1234> #replace <1234> w/id
+
+
+# For edge yolov5
+python3 detect.py --source 0 --weights yolov5s.pt --conf 0.4

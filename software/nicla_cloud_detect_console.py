@@ -53,14 +53,15 @@ def print_detections(results, class_names):
 
     for detection in detections:
         x_center, y_center, width, height, obj_score, *class_probs = detection[:5 + len(class_names)]
-        if obj_score > 0.8:  # Adjust threshold as needed
+        if obj_score > 0.9:  # Adjust threshold as needed
             class_id = np.argmax(class_probs)
             class_label = class_names[class_id]
             print(f"Detected: {class_label} with confidence {obj_score:.2f}")
 
 def main():
-    # rtsp_url = "rtsp://10.1.1.89:554"
-    rtsp_url =  "rtsp://192.168.1.188:554"
+    #rtsp_url = "rtsp://10.1.1.89:554"
+    #rtsp_url =  "rtsp://192.168.1.188:554"
+    rtsp_url = "rtsp://192.168.254.78:8554/unicast"
     model_path = '/Users/tilboon/Desktop/content/yolov5/best_tf'
     input_size = (320, 320)  # Adjust to your model's input size
 
