@@ -33,6 +33,37 @@ colors = [ # Add more colors if you are detecting more than 7 types of classes a
     (255,   0, 128),
 ]
 
+def estimate_vechicle_weight(car_type_label):
+    estimated_mass = 0
+    if car_type_label == labels[0]:
+        estimated_mass = 3092
+    elif car_type_label == labels[1]:
+        estimated_mass = 4037
+    elif car_type_label == labels[2]:
+        estimated_mass = 3448
+    elif car_type_label == labels[3]:
+        estimated_mass = 3466
+    elif car_type_label == labels[4]:
+        estimated_mass = 2992
+    elif car_type_label == labels[5]:
+        estimated_mass = 4462
+    elif car_type_label == labels[6]:
+        estimated_mass = 4451
+    elif car_type_label == labels[7]:
+        estimated_mass = 4433
+    elif car_type_label == labels[8]:
+        estimated_mass = 4331
+    elif car_type_label == labels[9]:
+        estimated_mass = 3743
+    elif car_type_label == labels[10]:
+        estimated_mass = 3494
+    elif car_type_label == labels[11]:
+        estimated_mass = 3695
+    else:
+        estimated_mass = 0
+
+    return estimated_mass
+
 clock = time.clock()
 while(True):
     clock.tick()
@@ -47,7 +78,11 @@ while(True):
         if (i == 0): continue # background class
         if (len(detection_list) == 0): continue # no detections for this class?
 
-        print("********** %s **********" % labels[i])
+        weight = estimate_vechicle_weight(labels[i])
+        #print("********** %s **********" % labels[i])
+        
+        print("Detected %s, weight: %s" % (labels[i], weight))
+        
         for d in detection_list:
             [x, y, w, h] = d.rect()
             center_x = math.floor(x + (w / 2))
