@@ -10,6 +10,8 @@
 /annotated_test_images/
 /TF_Models/
 /junkfolder/
+/YoloFormatData/
+!*.csv
 
 # What not to ignore
 !* .py
