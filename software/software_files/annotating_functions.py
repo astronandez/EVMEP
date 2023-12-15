@@ -3,6 +3,7 @@ import cv2
 import sys
 import numpy as np
 import matplotlib.pyplot as plt
+from simple_weight_estimation import *
 
 def generate_color_mapping(num_classes: int) -> List[Tuple[int, ...]]:
     """Generate a unique BGR color for each class
@@ -44,11 +45,12 @@ def draw_box_title(
     """
     color = color_mapping[class_id]
     class_name = class_names[class_id]
+    weight_estimate = estimate_vechicle_weight(class_name)
 
     if is_target:
         title = f"[GT] {class_name}"
     else:
-        title = f'[Pred] {class_name}  {str(round(pred_conf, 2)) if pred_conf is not None else ""}'
+        title = f'[Pred:{class_name}] [Conf:{str(round(pred_conf, 2)) if pred_conf is not None else ""}] [lbs:{weight_estimate}]'
 
     image_np = draw_bbox(image=image_np, title=title, x1=x1, y1=y1, x2=x2, y2=y2, box_thickness=box_thickness, color=color)
     return image_np
@@ -83,8 +85,8 @@ def draw_bbox(
         # This is required because small images require small font size, but this makes the title look bad,
         # so when possible we increase the font size to a more appropriate value.
         font_size = 0.25 + 0.07 * min(overlay.shape[:2]) / 100
-        font_size = max(font_size, 0.5)  # Set min font_size to 0.5
-        font_size = min(font_size, 0.8)  # Set max font_size to 0.8
+        font_size = max(font_size, 0.2)  # Set min font_size to 0.5
+        font_size = min(font_size, 0.3)  # Set max font_size to 0.8
 
         overlay = draw_text_box(image=overlay, text=title, x=x1, y=y1, font=2, font_size=font_size, background_color=color, thickness=1)
 
@@ -171,15 +173,16 @@ def show_predictions_from_batch_format(image, predictions):
         )
 
     plt.figure(figsize=(8, 8))
-    plt.imshow(image)
+    # plt.imshow(image)
     plt.tight_layout()
-    plt.show()
+    #plt.show()
+    plt.imsave(f"Z:/Test_Images/{name}", image)
 
 def show_predictions_from_flat_format(image, predictions, name):
     [flat_predictions] = predictions
 
     image = image.copy()
-    class_names = ['MPV', 'SUV', 'sedan', 'hatchback', 'minibus', 'fastback', 'estate',
+    class_names = ['MPV', 'SUV', 'sedan', 'hatchback', 'minibus', 'fastback', 'wagon',
                'pickup', 'hardtop convertible', 'sports', 'crossover', 'convertible']
     color_mapping = generate_color_mapping(len(class_names))
 
@@ -198,17 +201,18 @@ def show_predictions_from_flat_format(image, predictions, name):
                     pred_conf=class_score,
                 )
 
-    plt.figure(figsize=(8, 8))
+    fig = plt.figure(figsize=(8, 8))
     # plt.imshow(image)
     plt.tight_layout()
     #plt.show()
-    plt.imsave(f"Z:/Test_Images/{name}", image)
+    plt.imsave(f"C:/Users/Marc Hernandez/Documents/UCLA/ECE 202A/EVMEP/software/software_files/annotated_test_images/{name}", image)
+    plt.close(fig)
 
 def show_predictions_from_flat_format_no_save(image, predictions):
     [flat_predictions] = predictions
 
     image = image.copy()
-    class_names = ['MPV', 'SUV', 'sedan', 'hatchback', 'minibus', 'fastback', 'estate',
+    class_names = ['MPV', 'SUV', 'sedan', 'hatchback', 'minibus', 'fastback', 'wagon',
                'pickup', 'hardtop convertible', 'sports', 'crossover', 'convertible']
     color_mapping = generate_color_mapping(len(class_names))
 

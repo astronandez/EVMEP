@@ -6,6 +6,10 @@
 /Lib/
 /pyvenv.cfg
 /Videos/
+/OutputVideos/
+/annotated_test_images/
+/TF_Models/
+/junkfolder/
 
 # What not to ignore
 !* .py
