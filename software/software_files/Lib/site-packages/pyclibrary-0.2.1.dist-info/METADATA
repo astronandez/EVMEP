@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: pyclibrary
+Version: 0.2.1
+Summary: C binding automation
+Home-page: http://github.com/MatthieuDartiailh/pyclibrary
+Author: PyCLibrary Developers
+Author-email: m.dartiailh@gmail.com
+License: MIT
+Download-URL: http://github.com/MatthieuDartiailh/pyclibrary/tarball/master
+Keywords: C binding automation
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/x-rst
+Requires-Dist: pyparsing (<4,>=2.3.1)
+
+PyCLibrary includes 1) a pure-python C parser and
+2) an automation library that uses C header file definitions to simplify the
+use of c bindings. The C parser currently processes all macros, typedefs,
+structs, unions, enums, function prototypes, and global variable declarations,
+and can evaluate typedefs down to their fundamental C types +
+pointers/arrays/function signatures. Pyclibrary can automatically build c
+structs/unions and perform type conversions when calling functions via
+cdll/windll.
+

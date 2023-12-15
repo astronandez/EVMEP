@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a2509d36-61db-4600-bc1f-dbcbee0782f1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/TF_Models/quantized_model.tflite" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotated_test_images/03f8f89db4b34e_jpg.rf.03dcef32361a45f70cb01f4faf2a77f4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotated_test_images/04ebfddb44492f_jpg.rf.728b94fa6737b76edb3507af1d8faf09.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotated_test_images/0aeb907e51e826_jpg.rf.3b9b134dd50dabb32ca740c03541ffc8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotated_test_images/0b17b9b207a23d_jpg.rf.801a0d08c8e6db0d75ce19dd35aa6e73.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotated_test_images/0b4f639bc3abcf_jpg.rf.610218a7b8c100085faf26bca6bda43b.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotated_test_images/0b7af7999af06b_jpg.rf.4fdaeb6c2bde4c0fd813c2c246d31d8b.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotated_test_images/0d771d91ffc5f6_jpg.rf.e84d36ff5dab78be2f0d6d05c52a4b24.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotated_test_images/0da899a1a3da81_jpg.rf.bc566c2347b3e617868f858b3a84a0e1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotated_test_images/0df3e909fb4499_jpg.rf.51958438c98e328a3c0dbd7e318b3079.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotated_test_images/0e7a0d3b5336f3_jpg.rf.55a90ec08e3374875af4cde5c39af719.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotated_test_images/0ee085ecd6b9ab_jpg.rf.4e4f73683defee722ef217b0649f73b5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotated_test_images/0f1258f0dafe69_jpg.rf.5bc7b0e2ee79ebdde96bacf45323bc18.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotated_test_images/0f1b0088ccf8e4_jpg.rf.a3b4f46490064fd8deceaaba025566b5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotated_test_images/0f99e6a3180c87_jpg.rf.28eb8a7536c13700201e7fa5ac325235.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotated_test_images/1a593507e18661_jpg.rf.dc95d350a6eb223b875764561a14e047.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotated_test_images/1a90336826947f_jpg.rf.2ed3ad6b50eacf5615ac49e03e4d1a7f.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotated_test_images/1ac4d75681a154_jpg.rf.87bfa45be7832310e0224026aa01e33f.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotated_test_images/1b79fc6d7485f5_jpg.rf.e4d6f40f275a242459a720b5e0fec9f5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotated_test_images/1c1310ddd55afa_jpg.rf.e82c6d921222501984ca8957a48a4427.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotated_test_images/1c62c0c21b40d8_jpg.rf.d8b9a07afdf49d11dbdb04bbdb00e199.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotated_test_images/1ca3c20d930caf_jpg.rf.f8a865e6a5f9bd1ce79fd49db759b223.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotated_test_images/1cea87720aa911_jpg.rf.b0ae4e3f5619b770492f2ca72065cd29.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotated_test_images/1e2517fb39773b_jpg.rf.bf746d43545d383f22cf5fe821a52569.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotated_test_images/1e355cff9b790f_jpg.rf.c7c910cf07f9b87278d689e3ff7e0309.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotated_test_images/1e5230e3c2eded_jpg.rf.532169138bd8edd3edf514b898f52658.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotated_test_images/1f1f3fca37284e_jpg.rf.216feeb19f294bf8101106f1ad253097.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotated_test_images/2a198d2650eff7_jpg.rf.99fabedb52966aa504d36479d277773a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotated_test_images/2a5dc21ea594a0_jpg.rf.bd7a454a0140b426b42b7ba05316fe7c.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotated_test_images/2a8289e044e3f9_jpg.rf.297dfe6c65d955f1b606b19285f912b8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotated_test_images/2b3c03bdf57ba7_jpg.rf.d90b43dce19be15c7d8ac170f03a3675.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotated_test_images/2c21e559ea1264_jpg.rf.4f2ae8db36ca0842a92f6aed357d7ac0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotated_test_images/2c2594a3035bbc_jpg.rf.1649fc67b42d7c8ca0db3bb06aa59c4e.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotated_test_images/2c43d6cf7a450b_jpg.rf.36608d64eb189c9afe34569ede40fbd6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotated_test_images/2c9374e6a3872e_jpg.rf.8cafbcdc67c540577ac5e20d2a379502.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotated_test_images/2dcc1a9d8dcf9c_jpg.rf.c912cc8320d3258652760f45f1670339.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotated_test_images/2de70151b3f023_jpg.rf.2e7c5ceb7943fc8ec86eba949aa14c3a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotated_test_images/2eb8f813e882ca_jpg.rf.0eddd93d4c074814de0b33753f14c9b1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotated_test_images/2f4c78cf8394a3_jpg.rf.2c2e33cbf1f768cf12ba15cb3c476f57.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotated_test_images/2fd829fb0f00bd_jpg.rf.bc6a63b086f0a008332f5139a69a8557.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotated_test_images/2ffde186a1774b_jpg.rf.2543d337aa0cf10cfa790045aba3a9aa.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotated_test_images/3a1cd640f8f186_jpg.rf.9bf4bdc8706ece2fd9ba75e907767983.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotated_test_images/3a582eadc8175a_jpg.rf.ef0d3db52350edeb87f5776c2b5f5c7e.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotated_test_images/3ac96066b32d85_jpg.rf.5ffef23122352a098a546457164c5e7d.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotated_test_images/3b1c96703a6563_jpg.rf.e64df21b4a46b832b583cc7d30df3746.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotated_test_images/3b584ae9c8a86e_jpg.rf.bedf74421bd9da2f37ed0fbeb0e0d415.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotated_test_images/3c1a54c6940b83_jpg.rf.c61e3dccbb21eb8450eecbe32200b9b2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotated_test_images/3c2e0dda1f1e1d_jpg.rf.15133c87825ba30dbb3593696bc5c932.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotated_test_images/3c6db94b13719f_jpg.rf.a8238d4fc2ece7035e4971d0899eaa75.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotated_test_images/3cb0fcc6e2859c_jpg.rf.b74f9fb25c1d195e7e04ecf4da053e9b.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotated_test_images/3dc07e6fac365b_jpg.rf.1add6c84c573a3f5ffeed18afc796cd9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotated_test_images/3dda518fc91cb1_jpg.rf.395d2ee9d902a89722a2094581f5bd31.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotated_test_images/3df603c6493dc3_jpg.rf.be0a9a77e4b6a7d59f405cec9e910b19.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotated_test_images/3e2f8e613d6330_jpg.rf.dd4f7ffc2b62c7d02b840987434ff295.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotated_test_images/3e416b3ab3e70a_jpg.rf.b5cb4112777cd9b13a42a67b0461a5c4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotated_test_images/3e5036bee5b759_jpg.rf.185b64cab346b5fda23b50bb29355193.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotated_test_images/3ea4ee34c95076_jpg.rf.c9dc3e3ac5e78cf4ab7eda3e89dfa847.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotated_test_images/3edf9996da6f72_jpg.rf.18ebb498713508decd21906e3fadd1b9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotated_test_images/4a5daa5d9f7cee_jpg.rf.df1a1995703772ee669a2e6eddb86119.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotated_test_images/4a7cf364e76ff8_jpg.rf.c31d0b95bb9405e564df7844f3182ed1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotated_test_images/4ab64e988e21f9_jpg.rf.6e5f10090a9c1476720ba22d5881f844.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/avg_weight_on_per_class.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csv_dataset_dev.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_data_config.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simple_weight_estimation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train_val_test_split/image.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train_val_test_split/label.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train_val_test_split/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train_val_test_split/val.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weight_to_model.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1s_image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1s_image_crop.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1s_image_sm.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output.mp4v" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/annotating_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/annotating_functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/annotation/image.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/annotation/label.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/annotation/train.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/annotation/val.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic_object_detection_video.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic_object_detection_webcam.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom_dataset_params.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_analysis_PCA.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_analytics.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_file_reconstruction.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_prep.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_split.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/draw_box.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/file_finder_helper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/yolo_nas_s_int8_with_calibration.onnx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_creation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/norm_object_detection_video.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/objdet_sort_tracking.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/onnx_model_test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/onnx_model_test_no_deps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/onnx_video_detection.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/onnx_video_steam.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/onnx_video_test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputsinglecarvideo.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputsinglecarvideo_test.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/qat_model_cifar10_1x3x32x32.onnx" beforeDir="false" afterPath="$PROJECT_DIR$/TF_Models/best.tflite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/single_vehicle_test.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sort.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_image_crop.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/text_to_csv_convert.py" beforeDir="false" afterPath="$PROJECT_DIR$/helpful_data_management/text_to_csv_convert.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle_class_list.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yolo_nas_s.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yolo_nas_s_eval_out.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yolo_nas_s_int8_with_calibration.onnx" beforeDir="false" afterPath="$PROJECT_DIR$/models/yolo_nas_s_int8_with_calibration.onnx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yolo_nas_s_int8_with_calibration_v2.onnx" beforeDir="false" afterPath="$PROJECT_DIR$/models/yolo_nas_s_int8_with_calibration_v2.onnx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yolo_nas_s_int8_with_calibration_v4.onnx" beforeDir="false" afterPath="$PROJECT_DIR$/models/yolo_nas_s_int8_with_calibration_v4.onnx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yolo_nas_s_utils.py" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2Yv3qVXnnm0uxy53e31wqFeFfDR" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Marc",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/Marc Hernandez/Documents/UCLA/ECE 202A/EVMEP/software/software_files",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "settings.editor.splitter.proportion": "0.2324159"
+  }
+}]]></component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="software_files" is-module-sdk="true">
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="software_files" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Marc Hernandez\Documents\UCLA\ECE 202A\EVMEP\software\software_files" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Marc Hernandez\Documents\UCLA\ECE 202A\EVMEP\software\software_files" />
+      <recent name="C:\Users\Marc Hernandez\Documents\UCLA\ECE 202A\EVMEP\software\software_files\junkfolder" />
+      <recent name="C:\Users\Marc Hernandez\Documents\UCLA\ECE 202A\EVMEP\software\software_files\helpful_data_management" />
+      <recent name="C:\Users\Marc Hernandez\Documents\UCLA\ECE 202A\EVMEP\software\software_files\models" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a2509d36-61db-4600-bc1f-dbcbee0782f1" name="Changes" comment="" />
+      <created>1701392416455</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1701392416455</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
