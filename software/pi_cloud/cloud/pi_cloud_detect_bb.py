@@ -4,6 +4,8 @@ import tensorflow as tf
 import os
 import cv2
 
+from simple_weight_estimation import *
+
 # Set FFmpeg preferences to use UDP
 os.environ["OPENCV_FFMPEG_CAPTURE_OPTIONS"] = "rtsp_transport;udp"
 
@@ -50,21 +52,24 @@ def draw_boxes(frame, results, class_names):
             ymax = int(y_center - (2 * height / 3))
 
             # Debugging print statements
-            print("Detection found:")
-            print(f"    Object Score: {obj_score:.2f}")
-            print(f"    Bounding Box: xmin={xmin}, ymin={ymin}, xmax={xmax}, ymax={ymax}")
-            print(f"    Width: {width}, Height: {height}")
-            print(f"    x_center: {x_center}, y_center: {y_center}")
+            #print("Detection found:")
+            #print(f"    Object Score: {obj_score:.2f}")
+            #print(f"    Bounding Box: xmin={xmin}, ymin={ymin}, xmax={xmax}, ymax={ymax}")
+            #print(f"    Width: {width}, Height: {height}")
+            #print(f"    x_center: {x_center}, y_center: {y_center}")
 
             class_id = np.argmax(class_probs)
             class_label = class_names[class_id]
-            print(f"    Class: {class_label}, Probability: {class_probs[class_id]:.2f}")
+            weight = estimate_vechicle_weight(class_label)
+            print(f"    Class: {class_label}, Probability: {class_probs[class_id]:.2f}, lbs: {weight}")
 
             # Draw the bounding box on the frame
             cv2.rectangle(frame, (xmin, ymin), (xmax, ymax), (0, 255, 0), 2)
 
             # Draw class label and confidence
-            cv2.putText(frame, f"{class_label} {obj_score:.2f}", (xmin, ymin - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (36, 255, 12), 2)
+            #cv2.putText(frame, f"{class_label} {obj_score:.2f}", (xmin, ymin - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (36, 255, 12), 2)
+            cv2.putText(frame, f"{class_label} {obj_score:.2f} lbs: {weight}", (xmin, ymin - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (36, 255, 12), 2)
+
 
     # Display the frame
     cv2.imshow('Object Detection', frame)

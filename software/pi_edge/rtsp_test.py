@@ -4,6 +4,8 @@ import tensorflow as tf
 import os
 import cv2
 
+from simple_weight_estimation import *
+
 # Set FFmpeg preferences to use UDP
 os.environ["OPENCV_FFMPEG_CAPTURE_OPTIONS"] = "rtsp_transport;udp"
 
@@ -90,9 +92,12 @@ def draw_boxes(frame, results, class_names):
 
             class_id = np.argmax(class_probs)
             class_label = class_names[class_id]
+            weight = estimate_vechicle_weight(class_label)
+            print(f"    Class: {class_label}, Probability: {class_probs[class_id]:.2f}, lbs: {weight}")
 
             # Draw class label and confidence
-            cv2.putText(frame, f"{class_label} {obj_score:.2f}", (xmin, ymin - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (36, 255, 12), 2)
+            #cv2.putText(frame, f"{class_label} {obj_score:.2f}", (xmin, ymin - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (36, 255, 12), 2)
+            cv2.putText(frame, f"{class_label} {obj_score:.2f} lbs: {weight}", (xmin, ymin - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (36, 255, 12), 2)
 
     # Display the frame
     cv2.imshow('Object Detection', frame)
