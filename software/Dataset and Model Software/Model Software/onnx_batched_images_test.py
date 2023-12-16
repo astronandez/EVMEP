@@ -15,7 +15,7 @@ session = rt.InferenceSession(onnx_model.SerializeToString(), providers=["CPUExe
 inname = [o.name for o in session.get_inputs()]
 outname = [o.name for o in session.get_outputs()]
 
-path_to_images = 'C:/Users/Marc Hernandez/Documents/UCLA/ECE 202A/EVMEP/software/software_files/Test Images/'
+path_to_images = '//Test Images/'
 file_images = os.listdir(path_to_images)
 file_images = [f"{file_name}" for file_name in file_images]
 original_images = [cv2.imread(f"{path_to_images}/{file}") for file in file_images]
