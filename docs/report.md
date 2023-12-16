@@ -36,8 +36,8 @@ We selected this dataset primarily because of the large extent of represented ve
 Linjie Yang, Ping Luo, Chen Change Loy, Xiaoou Tang. A Large-Scale Car Dataset for Fine-Grained Categorization and Verification, In Computer Vision and Pattern Recognition (CVPR), 2015. Link: http://mmlab.ie.cuhk.edu.hk/datasets/comp_cars/index.html 
 
 * Carsheet.io
- * https://carsheet.io/ (Acquired dataset using a web scraping tool with permission from the original author given through email on Nov 16th)
- * This dataset was used to create a correlation between our vehicle types and their curb weight as defined by the manufacturer. Curb weight refers to the weight of the vehicle without any additional load, including passengers. 
+  * https://carsheet.io/ (Acquired dataset using a web scraping tool with permission from the original author given through email on Nov 16th)
+  * This dataset was used to create a correlation between our vehicle types and their curb weight as defined by the manufacturer. Curb weight refers to the weight of the vehicle without any additional load, including passengers. 
 
 Additionally, for one of our methods (nicla edge detection) we had to train a custom model using not “YOLO” but “FOMO” - Faster Objects More Objects. FOMO is a more recent development and is designed to be a simpler and faster object detection model compared to traditional methods like SSD or YOLO. The primary focus of FOMO is to achieve rapid object detection while maintaining high accuracy, especially in scenarios where there are many objects to detect in an image. It simplifies the architecture and computational process compared to more complex models, which makes it efficient for real-time applications and devices with limited computational resources.
 
