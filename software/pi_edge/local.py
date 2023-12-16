@@ -23,10 +23,10 @@ def draw_boxes(frame, results, class_names):
     for detection in detections:
         x_center, y_center, width, height, obj_score, *class_probs = detection[:5 + len(class_names)]
         if obj_score > 0.8: 
-            xmin = int(x_center - width / 2)
-            xmax = int(x_center + width / 2)
-            ymin = int(y_center)
-            ymax = int(y_center - (2 * height / 3))
+            xmin = int(2*(x_center - width / 2))
+            xmax = int(2*(x_center + width / 2))
+            ymin = int(2*(y_center))
+            ymax = int(2*(y_center - (2 * height / 3)))
             cv2.rectangle(frame, (xmin, ymin), (xmax, ymax), (0, 255, 0), 2)
             class_id = np.argmax(class_probs)
             class_label = class_names[class_id]
