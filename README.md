@@ -19,4 +19,4 @@ $ pip install opencv-python
 $ pip install Super-Gradients
 $ pip install TensorFlow
 ```
-![](https://github.com/astronandez/EVMEP/edit/main/docs/media/rpi_edge_long_gif.gif)
+![](https://github.com/astronandez/EVMEP/blob/main/docs/media/rpi_cloud_short_gif.gif)
