@@ -141,7 +141,7 @@ Small snippets of our results can be viewed here but the full videos are in the 
 
 ## Nicla Vision (Cloud) Single Car
 
-![](https://github.com/astronandez/EVMEP/blob/main/docs/media/nicla_cloud_short_gif.gif)
+![](docs/media/nicla_cloud_short_gif.gif)
 
 ## Raspberry Pi (Cloud) Single car
 
