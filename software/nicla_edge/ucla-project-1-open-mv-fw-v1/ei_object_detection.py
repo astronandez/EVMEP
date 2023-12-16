@@ -1,4 +1,4 @@
-# Edge Impulse - OpenMV Object Detection Example
+# Edge Impulse - OpenMV Object Detection
 
 import sensor, image, time, os, tf, math, uos, gc
 
@@ -30,6 +30,7 @@ colors = [ # Add more colors if you are detecting more than 7 types of classes a
     (  0,   0, 255),
     (128,   0, 255),
     (255,   0, 255),
+    (255,   0, 128),
     (255,   0, 128),
 ]
 
@@ -80,9 +81,9 @@ while(True):
 
         weight = estimate_vechicle_weight(labels[i])
         #print("********** %s **********" % labels[i])
-        
+
         print("Detected %s, weight: %s" % (labels[i], weight))
-        
+
         for d in detection_list:
             [x, y, w, h] = d.rect()
             center_x = math.floor(x + (w / 2))

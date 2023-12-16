@@ -38,7 +38,8 @@ omv.disable_fb(True)
 
 network_if = network.WLAN(network.STA_IF)
 network_if.active(True)
-network_if.connect("lemur2", "lemur9473")
+network_if.connect("Ziply-54F0", "fnc3f4xkcjmw")
+#network_if.connect("lemur2", "lemur9473")
 #network_if.connect("Thugz Mansion", "alnurcantusethis206")
 while not network_if.isconnected():
     print("Trying to connect. Note this may take a while...")

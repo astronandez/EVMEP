@@ -40,7 +40,7 @@ def draw_boxes(frame, results, class_names):
     for detection in detections:
         x_center, y_center, width, height, obj_score, *class_probs = detection[:5 + len(class_names)]
 
-        if obj_score > 0.9:  # Adjust threshold as needed
+        if obj_score > 0.8:  # Adjust threshold as needed
             # Convert center coordinates to corner coordinates
             xmin = int(x_center - width / 2)
             xmax = int(x_center + width / 2)
@@ -53,7 +53,8 @@ def draw_boxes(frame, results, class_names):
             class_id = np.argmax(class_probs)
             class_label = class_names[class_id]
             weight = estimate_vechicle_weight(class_label)
-            print(f"    Class: {class_label}, Probability: {class_probs[class_id]:.2f}, lbs: {weight}")
+            #print(f"    Class: {class_label}, Probability: {class_probs[class_id]:.2f}, lbs: {weight}")
+            print(f"    Class: {class_label}, Probability: {obj_score:.2f}, lbs: {weight}")
 
             # Draw class label and confidence
             #cv2.putText(frame, f"{class_label} {obj_score:.2f}", (xmin, ymin - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (36, 255, 12), 2)
@@ -65,7 +66,8 @@ def draw_boxes(frame, results, class_names):
 def main():
     #rtsp_url = "rtsp://10.1.1.89:554"
     #rtsp_url =  "rtsp://192.168.1.188:554"
-    rtsp_url = "rtsp://172.91.64.236:8554/unicast"
+    #rtsp_url = "rtsp://172.91.64.236:8554/unicast"
+    rtsp_url = "rtsp://192.168.254.74:554"
     model_path = '/Users/tilboon/Desktop/content/yolov5/best_tf'
     input_size = (320, 320)  # Adjust to your model's input size
 
