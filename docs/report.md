@@ -55,7 +55,7 @@ For our project we had the task of making four implementations of an embedded ma
 
 As it relates to cloud processing, our approach for both methods was similar.
 
-![Image](https://raw.githubusercontent.com/astronandez/EVMEP/docs/media/cloud_process.png)
+![Image](https://raw.githubusercontent.com/astronandez/EVMEP/main/docs/media/cloud_process.png)
 
 As seen in this image, we ran scripts locally on the edge device to start an RTSP stream from the local camera (device 0). We then were able to access this camera stream (UDP due to reliability for media transfer) on any cloud or local device (with port forwarding configured) so we could utilize the increased resource capacity to run our object detection models and mass estimation scripts on the image stream. This stream could then be opened on the local device to view the stream with bounding boxes or further scripts were configured to print the outputs directly to the console (to save resources and optimize latency).
 
