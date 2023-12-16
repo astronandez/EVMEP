@@ -124,35 +124,35 @@ Small snippets of our results can be viewed here but the full videos are in the 
 
 ## Nicla Vision (Edge) Single Car
 
-![](https://github.com/astronandez/EVMEP/blob/main/docs/media/nicla_edge_short_gif.gif)
+![Image](https://raw.githubusercontent.com/astronandez/EVMEP/main/docs/media/nicla_edge_short_gif.gif)
 
 ## Raspberry Pi (Edge) Single car
 
-![](https://github.com/astronandez/EVMEP/blob/main/docs/media/rpi_edge_short_gif.gif)
+![Image](https://raw.githubusercontent.com/astronandez/EVMEP/main/docs/media/rpi_edge_short_gif.gif)
 
 ## Nicla Vision (Edge) Multi-Car
 
-![](https://github.com/astronandez/EVMEP/blob/main/docs/media/nicla_edge_long_gif.gif)
+![Image](https://raw.githubusercontent.com/astronandez/EVMEP/main/docs/media/nicla_edge_long_gif.gif)
 
 ## Raspberry Pi (Edge) Multi-car
 
-![](https://github.com/astronandez/EVMEP/blob/main/docs/media/rpi_edge_long_gif.gif)
+![Image](https://raw.githubusercontent.com/astronandez/EVMEP/main/docs/media/rpi_edge_long_gif.gif)
 
 ## Nicla Vision (Cloud) Single Car
 
-![Alt text](docs/media/nicla_cloud_short_gif.gif)
+![Image](https://raw.githubusercontent.com/astronandez/EVMEP/main/docs/media/nicla_cloud_short_gif.gif)
 
 ## Raspberry Pi (Cloud) Single car
 
-![](https://github.com/astronandez/EVMEP/blob/main/docs/media/rpi_cloud_short_gif.gif)
+![Image](https://raw.githubusercontent.com/astronandez/EVMEP/main/docs/media/rpi_cloud_short_gif.gif)
 
 ## Nicla Vision (Cloud) Multi-Car
 
-![](https://github.com/astronandez/EVMEP/blob/main/docs/media/nicla_cloud_long_gif.gif)
+![Image](https://raw.githubusercontent.com/astronandez/EVMEP/main/docs/media/nicla_cloud_long_gif.gif)
 
 ## Raspberry Pi (Cloud) Multi-car
 
-![](https://github.com/astronandez/EVMEP/blob/main/docs/media/rpi_cloud_long_gif.gif)
+![Image](https://raw.githubusercontent.com/astronandez/EVMEP/main/docs/media/rpi_cloud_long_gif.gif)
 
 # 5. Discussion and Conclusions
 
