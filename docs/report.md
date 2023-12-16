@@ -44,7 +44,7 @@ Additionally, for one of our methods (nicla edge detection) we had to train a cu
 We utilized openMV and Edge Impulse to take our custom YOLO dataset and train it to mee the necessary memory requirements to complete object detection on the edge using the nicla vision (model needs to be ~766 KB). This led to a much more inaccurate model, seen in the F1 score below for the trained dataset.
 
 
-![FOMO F1 Score](EVMEP/data/Edge Impulse metrics/f1_score.jpg)
+<img src="https://github.com/astronandez/EVMEP/data/edge_impulse_metrics/f1_score.jpg" height="600px">
 
 ### Hardware/Software Technical Approach:
 For our project we had the task of making four implementations of an embedded mass estimation pipeline. 
