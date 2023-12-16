@@ -1,5 +1,5 @@
 # EVMEP
-This is the Project for UCLA ECEM202A/CSM213A (Fall 2022).
+This is the Project for UCLA ECEM202A/CSM213A (Fall 2023).
 
 ## Team
 * Marc Hernandez
