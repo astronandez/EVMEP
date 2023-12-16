@@ -6,6 +6,7 @@ This is the Project for UCLA ECEM202A/CSM213A (Fall 2023).
 * Tilboon Elberier
 
 ## Instructions
+All configuration information can be found within individual folder readme's
 
 #### Hardware
 - Raspberry Pi 4, Bullseye Ubuntu
