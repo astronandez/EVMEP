@@ -1,0 +1,626 @@
+2023-12-15 19:33:15.241369: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING:tensorflow:From C:\Users\Marc Hernandez\Documents\UCLA\ECE 202A\EVMEP\software\Dataset and Model Software\env\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+[rtsp @ 00000242036734c0] Received packet without a start chunk; dropping frame.
+[rtsp @ 00000242036734c0] Received packet without a start chunk; dropping frame.
+[rtsp @ 00000242036734c0] Received packet without a start chunk; dropping frame.
+[rtsp @ 00000242036734c0] Received packet without a start chunk; dropping frame.
+[rtsp @ 00000242036734c0] Received packet without a start chunk; dropping frame.
+[rtsp @ 00000242036734c0] Received packet without a start chunk; dropping frame.
+[rtsp @ 00000242036734c0] Received packet without a start chunk; dropping frame.
+[rtsp @ 00000242036734c0] Received packet without a start chunk; dropping frame.
+[rtsp @ 00000242036734c0] Received packet without a start chunk; dropping frame.
+[rtsp @ 00000242036734c0] Received packet without a start chunk; dropping frame.
+[rtsp @ 00000242036734c0] Received packet without a start chunk; dropping frame.
+[rtsp @ 00000242036734c0] Received packet without a start chunk; dropping frame.
+[rtsp @ 00000242036734c0] Received packet without a start chunk; dropping frame.
+[rtsp @ 00000242036734c0] Received packet without a start chunk; dropping frame.
+[rtsp @ 00000242036734c0] Received packet without a start chunk; dropping frame.
+[rtsp @ 00000242036734c0] Received packet without a start chunk; dropping frame.
+[rtsp @ 00000242036734c0] Received packet without a start chunk; dropping frame.
+[rtsp @ 00000242036734c0] Received packet without a start chunk; dropping frame.
+[rtsp @ 00000242036734c0] Received packet without a start chunk; dropping frame.
+[rtsp @ 00000242036734c0] Received packet without a start chunk; dropping frame.
+[rtsp @ 00000242036734c0] Received packet without a start chunk; dropping frame.
+[rtsp @ 00000242036734c0] Received packet without a start chunk; dropping frame.
+[rtsp @ 00000242036734c0] Received packet without a start chunk; dropping frame.
+[rtsp @ 00000242036734c0] Received packet without a start chunk; dropping frame.
+[rtsp @ 00000242036734c0] Received packet without a start chunk; dropping frame.
+[rtsp @ 00000242036734c0] Received packet without a start chunk; dropping frame.
+[rtsp @ 00000242036734c0] Received packet without a start chunk; dropping frame.
+[rtsp @ 00000242036734c0] Received packet without a start chunk; dropping frame.
+[rtsp @ 00000242036734c0] Received packet without a start chunk; dropping frame.
+[rtsp @ 00000242036734c0] Received packet without a start chunk; dropping frame.
+[rtsp @ 00000242036734c0] Received packet without a start chunk; dropping frame.
+[rtsp @ 00000242036734c0] Received packet without a start chunk; dropping frame.
+[rtsp @ 00000242036734c0] Received packet without a start chunk; dropping frame.
+[rtsp @ 00000242036734c0] Received packet without a start chunk; dropping frame.
+[rtsp @ 00000242036734c0] Received packet without a start chunk; dropping frame.
+[rtsp @ 00000242036734c0] Received packet without a start chunk; dropping frame.
+[rtsp @ 00000242036734c0] Received packet without a start chunk; dropping frame.
+[rtsp @ 00000242036734c0] Received packet without a start chunk; dropping frame.
+[rtsp @ 00000242036734c0] Received packet without a start chunk; dropping frame.
+[rtsp @ 00000242036734c0] Received packet without a start chunk; dropping frame.
+[rtsp @ 00000242036734c0] Received packet without a start chunk; dropping frame.
+[rtsp @ 00000242036734c0] Received packet without a start chunk; dropping frame.
+[rtsp @ 00000242036734c0] Received packet without a start chunk; dropping frame.
+[rtsp @ 00000242036734c0] Received packet without a start chunk; dropping frame.
+[rtsp @ 00000242036734c0] Received packet without a start chunk; dropping frame.
+[rtsp @ 00000242036734c0] Received packet without a start chunk; dropping frame.
+[rtsp @ 00000242036734c0] Received packet without a start chunk; dropping frame.
+[rtsp @ 00000242036734c0] Received packet without a start chunk; dropping frame.
+[rtsp @ 00000242036734c0] Received packet without a start chunk; dropping frame.
+[rtsp @ 00000242036734c0] Received packet without a start chunk; dropping frame.
+[rtsp @ 00000242036734c0] Received packet with2023-12-15 19:33:21.262221: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE SSE2 SSE3 SSE4.1 SSE4.2 AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+    Class: Sedan, Probability: 0.50, lbs: 3494
+    Class: Sedan, Probability: 0.55, lbs: 3494
+    Class: Sedan, Probability: 0.47, lbs: 3494
+    Class: Sedan, Probability: 0.54, lbs: 3494
+    Class: Sedan, Probability: 0.47, lbs: 3494
+    Class: Sedan, Probability: 0.47, lbs: 3494
+    Class: Sedan, Probability: 0.50, lbs: 3494
+    Class: Sedan, Probability: 0.45, lbs: 3494
+    Class: Sedan, Probability: 0.48, lbs: 3494
+    Class: Sedan, Probability: 0.50, lbs: 3494
+    Class: Sedan, Probability: 0.49, lbs: 3494
+    Class: Sedan, Probability: 0.52, lbs: 3494
+    Class: Sedan, Probability: 0.48, lbs: 3494
+    Class: Sedan, Probability: 0.51, lbs: 3494
+    Class: Sedan, Probability: 0.42, lbs: 3494
+    Class: Sedan, Probability: 0.44, lbs: 3494
+    Class: Sedan, Probability: 0.51, lbs: 3494
+    Class: Sedan, Probability: 0.42, lbs: 3494
+    Class: Sedan, Probability: 0.45, lbs: 3494
+    Class: Sedan, Probability: 0.51, lbs: 3494
+    Class: Sedan, Probability: 0.38, lbs: 3494
+    Class: Sedan, Probability: 0.42, lbs: 3494
+    Class: Pickup Truck, Probability: 0.20, lbs: 4433
+    Class: Pickup Truck, Probability: 0.18, lbs: 4433
+    Class: Pickup Truck, Probability: 0.19, lbs: 4433
+    Class: Pickup Truck, Probability: 0.31, lbs: 4433
+    Class: Pickup Truck, Probability: 0.29, lbs: 4433
+    Class: Pickup Truck, Probability: 0.28, lbs: 4433
+    Class: MPV, Probability: 0.21, lbs: 3448
+    Class: MPV, Probability: 0.16, lbs: 3448
+    Class: MPV, Probability: 0.16, lbs: 3448
+    Class: Minibus, Probability: 0.14, lbs: 3695
+    Class: MPV, Probability: 0.15, lbs: 3448
+    Class: Minibus, Probability: 0.14, lbs: 3695
+    Class: MPV, Probability: 0.15, lbs: 3448
+    Class: Minibus, Probability: 0.14, lbs: 3695
+    Class: MPV, Probability: 0.15, lbs: 3448
+    Class: Sedan, Probability: 0.22, lbs: 3494
+    Class: Sedan, Probability: 0.32, lbs: 3494
+    Class: Sedan, Probability: 0.27, lbs: 3494
+    Class: Sedan, Probability: 0.32, lbs: 3494
+    Class: Sedan, Probability: 0.28, lbs: 3494
+    Class: Sedan, Probability: 0.23, lbs: 3494
+    Class: Sedan, Probability: 0.26, lbs: 3494
+    Class: Hatchback, Probability: 0.22, lbs: 4451
+    Class: Sedan, Probability: 0.26, lbs: 3494
+    Class: Sedan, Probability: 0.21, lbs: 3494
+    Class: Sedan, Probability: 0.25, lbs: 3494
+    Class: Minibus, Probability: 0.42, lbs: 3695
+    Class: Minibus, Probability: 0.48, lbs: 3695
+    Class: Minibus, Probability: 0.47, lbs: 3695
+    Class: Minibus, Probability: 0.57, lbs: 3695
+    Class: Minibus, Probability: 0.40, lbs: 3695
+    Class: Minibus, Probability: 0.56, lbs: 3695
+    Class: Minibus, Probability: 0.40, lbs: 3695
+    Class: Minibus, Probability: 0.54, lbs: 3695
+    Class: Minibus, Probability: 0.37, lbs: 3695
+    Class: Sedan, Probability: 0.30, lbs: 3494
+    Class: Sedan, Probability: 0.30, lbs: 3494
+    Class: Sedan, Probability: 0.27, lbs: 3494
+    Class: Sedan, Probability: 0.28, lbs: 3494
+    Class: Pickup Truck, Probability: 0.27, lbs: 4433
+    Class: Pickup Truck, Probability: 0.31, lbs: 4433
+    Class: Sedan, Probability: 0.26, lbs: 3494
+    Class: Sedan, Probability: 0.30, lbs: 3494
+    Class: Sedan, Probability: 0.30, lbs: 3494
+    Class: Sedan, Probability: 0.27, lbs: 3494
+    Class: Sedan, Probability: 0.29, lbs: 3494
+    Class: Sedan, Probability: 0.30, lbs: 3494
+    Class: SUV, Probability: 0.35, lbs: 3466
+    Class: SUV, Probability: 0.42, lbs: 3466
+    Class: SUV, Probability: 0.37, lbs: 3466
+    Class: SUV, Probability: 0.44, lbs: 3466
+    Class: SUV, Probability: 0.29, lbs: 3466
+    Class: SUV, Probability: 0.31, lbs: 3466
+    Class: SUV, Probability: 0.28, lbs: 3466
+    Class: SUV, Probability: 0.32, lbs: 3466
+    Class: Pickup Truck, Probability: 0.42, lbs: 4433
+    Class: Pickup Truck, Probability: 0.37, lbs: 4433
+    Class: Pickup Truck, Probability: 0.32, lbs: 4433
+    Class: Pickup Truck, Probability: 0.46, lbs: 4433
+    Class: Pickup Truck, Probability: 0.42, lbs: 4433
+    Class: Pickup Truck, Probability: 0.35, lbs: 4433
+    Class: Pickup Truck, Probability: 0.43, lbs: 4433
+    Class: Pickup Truck, Probability: 0.55, lbs: 4433
+    Class: Pickup Truck, Probability: 0.47, lbs: 4433
+    Class: Pickup Truck, Probability: 0.41, lbs: 4433
+    Class: Pickup Truck, Probability: 0.54, lbs: 4433
+    Class: Pickup Truck, Probability: 0.45, lbs: 4433
+    Class: Pickup Truck, Probability: 0.39, lbs: 4433
+    Class: Pickup Truck, Probability: 0.43, lbs: 4433
+    Class: Pickup Truck, Probability: 0.86, lbs: 4433
+    Class: Pickup Truck, Probability: 0.80, lbs: 4433
+    Class: Pickup Truck, Probability: 0.88, lbs: 4433
+    Class: Pickup Truck, Probability: 0.82, lbs: 4433
+    Class: Pickup Truck, Probability: 0.88, lbs: 4433
+    Class: Pickup Truck, Probability: 0.94, lbs: 4433
+    Class: Pickup Truck, Probability: 0.91, lbs: 4433
+    Class: Pickup Truck, Probability: 0.91, lbs: 4433
+    Class: Pickup Truck, Probability: 0.93, lbs: 4433
+    Class: Pickup Truck, Probability: 0.91, lbs: 4433
+    Class: Pickup Truck, Probability: 0.90, lbs: 4433
+    Class: SUV, Probability: 0.46, lbs: 3466
+    Class: Pickup Truck, Probability: 0.47, lbs: 4433
+    Class: SUV, Probability: 0.46, lbs: 3466
+    Class: Pickup Truck, Probability: 0.47, lbs: 4433
+    Class: SUV, Probability: 0.42, lbs: 3466
+    Class: Pickup Truck, Probability: 0.92, lbs: 4433
+    Class: Pickup Truck, Probability: 0.92, lbs: 4433
+    Class: Pickup Truck, Probability: 0.45, lbs: 4433
+    Class: Pickup Truck, Probability: 0.43, lbs: 4433
+    Class: Pickup Truck, Probability: 0.41, lbs: 4433
+    Class: Pickup Truck, Probability: 0.39, lbs: 4433
+    Class: Pickup Truck, Probability: 0.39, lbs: 4433
+    Class: Pickup Truck, Probability: 0.42, lbs: 4433
+    Class: Pickup Truck, Probability: 0.38, lbs: 4433
+    Class: Pickup Truck, Probability: 0.40, lbs: 4433
+    Class: Pickup Truck, Probability: 0.38, lbs: 4433
+    Class: SUV, Probability: 0.32, lbs: 3466
+    Class: Pickup Truck, Probability: 0.93, lbs: 4433
+    Class: Pickup Truck, Probability: 0.90, lbs: 4433
+    Class: Pickup Truck, Probability: 0.92, lbs: 4433
+    Class: Pickup Truck, Probability: 0.92, lbs: 4433
+    Class: Pickup Truck, Probability: 0.89, lbs: 4433
+    Class: Pickup Truck, Probability: 0.92, lbs: 4433
+    Class: Pickup Truck, Probability: 0.91, lbs: 4433
+    Class: Pickup Truck, Probability: 0.91, lbs: 4433
+    Class: Pickup Truck, Probability: 0.91, lbs: 4433
+    Class: Pickup Truck, Probability: 0.90, lbs: 4433
+    Class: Pickup Truck, Probability: 0.90, lbs: 4433
+    Class: Pickup Truck, Probability: 0.89, lbs: 4433
+    Class: Pickup Truck, Probability: 0.98, lbs: 4433
+    Class: Pickup Truck, Probability: 0.98, lbs: 4433
+    Class: Pickup Truck, Probability: 0.98, lbs: 4433
+    Class: Pickup Truck, Probability: 0.98, lbs: 4433
+    Class: Pickup Truck, Probability: 0.99, lbs: 4433
+    Class: Pickup Truck, Probability: 0.98, lbs: 4433
+    Class: Pickup Truck, Probability: 0.99, lbs: 4433
+    Class: Pickup Truck, Probability: 0.98, lbs: 4433
+    Class: Pickup Truck, Probability: 0.99, lbs: 4433
+    Class: Pickup Truck, Probability: 0.97, lbs: 4433
+    Class: Pickup Truck, Probability: 0.97, lbs: 4433
+    Class: Pickup Truck, Probability: 0.98, lbs: 4433
+    Class: Pickup Truck, Probability: 0.97, lbs: 4433
+    Class: Pickup Truck, Probability: 0.98, lbs: 4433
+    Class: Pickup Truck, Probability: 0.96, lbs: 4433
+    Class: Pickup Truck, Probability: 0.94, lbs: 4433
+    Class: Pickup Truck, Probability: 0.96, lbs: 4433
+    Class: Pickup Truck, Probability: 0.94, lbs: 4433
+    Class: Pickup Truck, Probability: 0.95, lbs: 4433
+    Class: Pickup Truck, Probability: 0.94, lbs: 4433
+    Class: SUV, Probability: 0.52, lbs: 3466
+    Class: SUV, Probability: 0.43, lbs: 3466
+    Class: SUV, Probability: 0.52, lbs: 3466
+    Class: SUV, Probability: 0.43, lbs: 3466
+    Class: Pickup Truck, Probability: 0.40, lbs: 4433
+    Class: Pickup Truck, Probability: 0.39, lbs: 4433
+    Class: Pickup Truck, Probability: 0.41, lbs: 4433
+    Class: SUV, Probability: 0.38, lbs: 3466
+    Class: Pickup Truck, Probability: 0.78, lbs: 4433
+    Class: Pickup Truck, Probability: 0.78, lbs: 4433
+    Class: SUV, Probability: 0.65, lbs: 3466
+    Class: SUV, Probability: 0.60, lbs: 3466
+    Class: SUV, Probability: 0.59, lbs: 3466
+    Class: Pickup Truck, Probability: 0.98, lbs: 4433
+    Class: Pickup Truck, Probability: 0.98, lbs: 4433
+    Class: Pickup Truck, Probability: 0.98, lbs: 4433
+    Class: Pickup Truck, Probability: 0.98, lbs: 4433
+    Class: Pickup Truck, Probability: 0.96, lbs: 4433
+    Class: Pickup Truck, Probability: 0.98, lbs: 4433
+    Class: Pickup Truck, Probability: 0.97, lbs: 4433
+    Class: Pickup Truck, Probability: 0.95, lbs: 4433
+    Class: Pickup Truck, Probability: 0.98, lbs: 4433
+    Class: Pickup Truck, Probability: 0.97, lbs: 4433
+    Class: Pickup Truck, Probability: 0.95, lbs: 4433
+    Class: Pickup Truck, Probability: 0.97, lbs: 4433
+    Class: Pickup Truck, Probability: 0.68, lbs: 4433
+    Class: Pickup Truck, Probability: 0.67, lbs: 4433
+    Class: SUV, Probability: 0.63, lbs: 3466
+    Class: SUV, Probability: 0.52, lbs: 3466
+    Class: SUV, Probability: 0.60, lbs: 3466
+    Class: SUV, Probability: 0.51, lbs: 3466
+    Class: SUV, Probability: 0.58, lbs: 3466
+    Class: SUV, Probability: 0.51, lbs: 3466
+    Class: Pickup Truck, Probability: 0.81, lbs: 4433
+    Class: Pickup Truck, Probability: 0.97, lbs: 4433
+    Class: Pickup Truck, Probability: 0.98, lbs: 4433
+    Class: Pickup Truck, Probability: 0.97, lbs: 4433
+    Class: Pickup Truck, Probability: 0.98, lbs: 4433
+    Class: Pickup Truck, Probability: 0.96, lbs: 4433
+    Class: Pickup Truck, Probability: 0.97, lbs: 4433
+    Class: Pickup Truck, Probability: 0.38, lbs: 4433
+    Class: Pickup Truck, Probability: 0.64, lbs: 4433
+    Class: Pickup Truck, Probability: 0.71, lbs: 4433
+    Class: Pickup Truck, Probability: 0.41, lbs: 4433
+    Class: Pickup Truck, Probability: 0.67, lbs: 4433
+    Class: Pickup Truck, Probability: 0.72, lbs: 4433
+    Class: Pickup Truck, Probability: 0.33, lbs: 4433
+    Class: Pickup Truck, Probability: 0.57, lbs: 4433
+    Class: Pickup Truck, Probability: 0.64, lbs: 4433
+    Class: SUV, Probability: 0.33, lbs: 3466
+    Class: Pickup Truck, Probability: 0.29, lbs: 4433
+    Class: Pickup Truck, Probability: 0.36, lbs: 4433
+    Class: Pickup Truck, Probability: 0.32, lbs: 4433
+    Class: SUV, Probability: 0.32, lbs: 3466
+    Class: SUV, Probability: 0.28, lbs: 3466
+    Class: SUV, Probability: 0.24, lbs: 3466
+    Class: Pickup Truck, Probability: 0.42, lbs: 4433
+    Class: SUV, Probability: 0.25, lbs: 3466
+    Class: SUV, Probability: 0.24, lbs: 3466
+    Class: Pickup Truck, Probability: 0.43, lbs: 4433
+    Class: SUV, Probability: 0.26, lbs: 3466
+    Class: SUV, Probability: 0.24, lbs: 3466
+    Class: Pickup Truck, Probability: 0.34, lbs: 4433
+    Class: SUV, Probability: 0.27, lbs: 3466
+    Class: MPV, Probability: 0.40, lbs: 3448
+    Class: MPV, Probability: 0.43, lbs: 3448
+    Class: MPV, Probability: 0.40, lbs: 3448
+    Class: MPV, Probability: 0.42, lbs: 3448
+    Class: MPV, Probability: 0.40, lbs: 3448
+    Class: MPV, Probability: 0.42, lbs: 3448
+    Class: Minibus, Probability: 0.45, lbs: 3695
+    Class: Minibus, Probability: 0.50, lbs: 3695
+    Class: Minibus, Probability: 0.37, lbs: 3695
+    Class: Minibus, Probability: 0.45, lbs: 3695
+    Class: Minibus, Probability: 0.51, lbs: 3695
+    Class: Minibus, Probability: 0.36, lbs: 3695
+    Class: Minibus, Probability: 0.41, lbs: 3695
+    Class: Minibus, Probability: 0.45, lbs: 3695
+    Class: Minibus, Probability: 0.33, lbs: 3695
+    Class: Minibus, Probability: 0.80, lbs: 3695
+    Class: Minibus, Probability: 0.59, lbs: 3695
+    Class: Minibus, Probability: 0.57, lbs: 3695
+    Class: Minibus, Probability: 0.54, lbs: 3695
+    Class: Minibus, Probability: 0.60, lbs: 3695
+    Class: Minibus, Probability: 0.57, lbs: 3695
+    Class: Minibus, Probability: 0.54, lbs: 3695
+    Class: Minibus, Probability: 0.56, lbs: 3695
+    Class: Minibus, Probability: 0.52, lbs: 3695
+    Class: Minibus, Probability: 0.51, lbs: 3695
+    Class: Minibus, Probability: 0.75, lbs: 3695
+    Class: Minibus, Probability: 0.70, lbs: 3695
+    Class: Minibus, Probability: 0.72, lbs: 3695
+    Class: Minibus, Probability: 0.71, lbs: 3695
+    Class: Minibus, Probability: 0.72, lbs: 3695
+    Class: Minibus, Probability: 0.69, lbs: 3695
+    Class: Minibus, Probability: 0.71, lbs: 3695
+    Class: Minibus, Probability: 0.38, lbs: 3695
+    Class: Minibus, Probability: 0.37, lbs: 3695
+    Class: Minibus, Probability: 0.38, lbs: 3695
+    Class: Minibus, Probability: 0.38, lbs: 3695
+    Class: Minibus, Probability: 0.34, lbs: 3695
+    Class: SUV, Probability: 0.41, lbs: 3466
+    Class: Pickup Truck, Probability: 0.47, lbs: 4433
+    Class: Pickup Truck, Probability: 0.58, lbs: 4433
+    Class: SUV, Probability: 0.42, lbs: 3466
+    Class: Pickup Truck, Probability: 0.44, lbs: 4433
+    Class: Pickup Truck, Probability: 0.55, lbs: 4433
+    Class: Pickup Truck, Probability: 0.48, lbs: 4433
+    Class: Pickup Truck, Probability: 0.45, lbs: 4433
+    Class: Pickup Truck, Probability: 0.57, lbs: 4433
+    Class: Pickup Truck, Probability: 0.43, lbs: 4433
+    Class: Pickup Truck, Probability: 0.52, lbs: 4433
+    Class: SUV, Probability: 0.80, lbs: 3466
+    Class: SUV, Probability: 0.79, lbs: 3466
+    Class: SUV, Probability: 0.79, lbs: 3466
+    Class: SUV, Probability: 0.78, lbs: 3466
+    Class: SUV, Probability: 0.61, lbs: 3466
+    Class: SUV, Probability: 0.59, lbs: 3466
+    Class: SUV, Probability: 0.62, lbs: 3466
+    Class: SUV, Probability: 0.60, lbs: 3466
+    Class: SUV, Probability: 0.60, lbs: 3466
+    Class: SUV, Probability: 0.59, lbs: 3466
+    Class: SUV, Probability: 0.88, lbs: 3466
+    Class: SUV, Probability: 0.90, lbs: 3466
+    Class: SUV, Probability: 0.88, lbs: 3466
+    Class: SUV, Probability: 0.89, lbs: 3466
+    Class: SUV, Probability: 0.74, lbs: 3466
+    Class: SUV, Probability: 0.73, lbs: 3466
+    Class: SUV, Probability: 0.75, lbs: 3466
+    Class: SUV, Probability: 0.74, lbs: 3466
+    Class: SUV, Probability: 0.73, lbs: 3466
+    Class: SUV, Probability: 0.72, lbs: 3466
+    Class: SUV, Probability: 0.40, lbs: 3466
+    Class: SUV, Probability: 0.56, lbs: 3466
+    Class: SUV, Probability: 0.38, lbs: 3466
+    Class: SUV, Probability: 0.55, lbs: 3466
+    Class: SUV, Probability: 0.40, lbs: 3466
+    Class: SUV, Probability: 0.40, lbs: 3466
+    Class: SUV, Probability: 0.41, lbs: 3466
+    Class: SUV, Probability: 0.40, lbs: 3466
+    Class: SUV, Probability: 0.40, lbs: 3466
+    Class: SUV, Probability: 0.40, lbs: 3466
+    Class: SUV, Probability: 0.49, lbs: 3466
+    Class: SUV, Probability: 0.62, lbs: 3466
+    Class: SUV, Probability: 0.46, lbs: 3466
+    Class: SUV, Probability: 0.59, lbs: 3466
+    Class: SUV, Probability: 0.46, lbs: 3466
+    Class: SUV, Probability: 0.47, lbs: 3466
+    Class: SUV, Probability: 0.42, lbs: 3466
+    Class: SUV, Probability: 0.48, lbs: 3466
+    Class: SUV, Probability: 0.47, lbs: 3466
+    Class: SUV, Probability: 0.42, lbs: 3466
+    Class: SUV, Probability: 0.46, lbs: 3466
+    Class: SUV, Probability: 0.48, lbs: 3466
+    Class: SUV, Probability: 0.41, lbs: 3466
+    Class: MPV, Probability: 0.42, lbs: 3448
+    Class: MPV, Probability: 0.46, lbs: 3448
+    Class: MPV, Probability: 0.44, lbs: 3448
+    Class: MPV, Probability: 0.42, lbs: 3448
+    Class: SUV, Probability: 0.38, lbs: 3466
+    Class: SUV, Probability: 0.40, lbs: 3466
+    Class: MPV, Probability: 0.41, lbs: 3448
+    Class: SUV, Probability: 0.39, lbs: 3466
+    Class: SUV, Probability: 0.40, lbs: 3466
+    Class: MPV, Probability: 0.40, lbs: 3448
+    Class: SUV, Probability: 0.39, lbs: 3466
+    Class: SUV, Probability: 0.40, lbs: 3466
+    Class: Minibus, Probability: 0.25, lbs: 3695
+    Class: MPV, Probability: 0.25, lbs: 3448
+    Class: Minibus, Probability: 0.28, lbs: 3695
+    Class: MPV, Probability: 0.27, lbs: 3448
+    Class: Minibus, Probability: 0.27, lbs: 3695
+    Class: MPV, Probability: 0.25, lbs: 3448
+    Class: MPV, Probability: 0.28, lbs: 3448
+    Class: MPV, Probability: 0.21, lbs: 3448
+    Class: Pickup Truck, Probability: 0.21, lbs: 4433
+    Class: MPV, Probability: 0.27, lbs: 3448
+    Class: MPV, Probability: 0.21, lbs: 3448
+    Class: Pickup Truck, Probability: 0.21, lbs: 4433
+    Class: MPV, Probability: 0.28, lbs: 3448
+    Class: MPV, Probability: 0.21, lbs: 3448
+    Class: Pickup Truck, Probability: 0.19, lbs: 4433
+    Class: MPV, Probability: 0.70, lbs: 3448
+    Class: MPV, Probability: 0.74, lbs: 3448
+    Class: MPV, Probability: 0.73, lbs: 3448
+    Class: MPV, Probability: 0.56, lbs: 3448
+    Class: MPV, Probability: 0.53, lbs: 3448
+    Class: MPV, Probability: 0.56, lbs: 3448
+    Class: MPV, Probability: 0.53, lbs: 3448
+    Class: MPV, Probability: 0.53, lbs: 3448
+    Class: MPV, Probability: 0.49, lbs: 3448
+    Class: SUV, Probability: 0.40, lbs: 3466
+    Class: SUV, Probability: 0.42, lbs: 3466
+    Class: SUV, Probability: 0.42, lbs: 3466
+    Class: SUV, Probability: 0.44, lbs: 3466
+    Class: SUV, Probability: 0.42, lbs: 3466
+    Class: SUV, Probability: 0.44, lbs: 3466
+    Class: MPV, Probability: 0.37, lbs: 3448
+    Class: MPV, Probability: 0.40, lbs: 3448
+    Class: MPV, Probability: 0.40, lbs: 3448
+    Class: MPV, Probability: 0.40, lbs: 3448
+    Class: MPV, Probability: 0.41, lbs: 3448
+    Class: Pickup Truck, Probability: 0.90, lbs: 4433
+    Class: Pickup Truck, Probability: 0.89, lbs: 4433
+    Class: Pickup Truck, Probability: 0.62, lbs: 4433
+    Class: Pickup Truck, Probability: 0.61, lbs: 4433
+    Class: Minibus, Probability: 0.51, lbs: 3695
+    Class: Minibus, Probability: 0.52, lbs: 3695
+    Class: SUV, Probability: 0.31, lbs: 3466
+    Class: SUV, Probability: 0.32, lbs: 3466
+    Class: SUV, Probability: 0.31, lbs: 3466
+    Class: SUV, Probability: 0.32, lbs: 3466
+    Class: Minibus, Probability: 0.29, lbs: 3695
+    Class: Minibus, Probability: 0.24, lbs: 3695
+    Class: Minibus, Probability: 0.29, lbs: 3695
+    Class: Minibus, Probability: 0.24, lbs: 3695
+    Class: Minibus, Probability: 0.25, lbs: 3695
+    Class: Minibus, Probability: 0.69, lbs: 3695
+    Class: Minibus, Probability: 0.74, lbs: 3695
+    Class: Minibus, Probability: 0.74, lbs: 3695
+    Class: Minibus, Probability: 0.47, lbs: 3695
+    Class: Minibus, Probability: 0.49, lbs: 3695
+    Class: Minibus, Probability: 0.49, lbs: 3695
+    Class: Pickup Truck, Probability: 0.48, lbs: 4433
+    Class: Pickup Truck, Probability: 0.45, lbs: 4433
+    Class: Sedan, Probability: 0.55, lbs: 3494
+    Class: Sedan, Probability: 0.57, lbs: 3494
+    Class: Sedan, Probability: 0.53, lbs: 3494
+    Class: Sedan, Probability: 0.54, lbs: 3494
+    Class: Sedan, Probability: 0.50, lbs: 3494
+    Class: Sedan, Probability: 0.56, lbs: 3494
+    Class: Sedan, Probability: 0.49, lbs: 3494
+    Class: Sedan, Probability: 0.48, lbs: 3494
+    Class: Sedan, Probability: 0.54, lbs: 3494
+    Class: Sedan, Probability: 0.47, lbs: 3494
+    Class: Sedan, Probability: 0.53, lbs: 3494
+    Class: Sedan, Probability: 0.59, lbs: 3494
+    Class: Sedan, Probability: 0.60, lbs: 3494
+    Class: Sedan, Probability: 0.57, lbs: 3494
+    Class: Sedan, Probability: 0.57, lbs: 3494
+    Class: Sedan, Probability: 0.54, lbs: 3494
+    Class: Sedan, Probability: 0.53, lbs: 3494
+    Class: Sedan, Probability: 0.52, lbs: 3494
+    Class: Sedan, Probability: 0.52, lbs: 3494
+    Class: Sedan, Probability: 0.49, lbs: 3494
+    Class: Sedan, Probability: 0.50, lbs: 3494
+    Class: Sedan, Probability: 0.62, lbs: 3494
+    Class: Sedan, Probability: 0.62, lbs: 3494
+    Class: Sedan, Probability: 0.60, lbs: 3494
+    Class: Sedan, Probability: 0.58, lbs: 3494
+    Class: Sedan, Probability: 0.53, lbs: 3494
+    Class: Sedan, Probability: 0.53, lbs: 3494
+    Class: Sedan, Probability: 0.53, lbs: 3494
+    Class: Sedan, Probability: 0.50, lbs: 3494
+    Class: Sedan, Probability: 0.53, lbs: 3494
+    Class: Sedan, Probability: 0.51, lbs: 3494
+    Class: Sedan, Probability: 0.49, lbs: 3494
+    Class: Sedan, Probability: 0.52, lbs: 3494
+    Class: Sedan, Probability: 0.51, lbs: 3494
+    Class: Sedan, Probability: 0.60, lbs: 3494
+    Class: Sedan, Probability: 0.60, lbs: 3494
+    Class: Sedan, Probability: 0.68, lbs: 3494
+    Class: Sedan, Probability: 0.71, lbs: 3494
+    Class: Sedan, Probability: 0.72, lbs: 3494
+    Class: Sedan, Probability: 0.67, lbs: 3494
+    Class: Sedan, Probability: 0.68, lbs: 3494
+    Class: Sedan, Probability: 0.68, lbs: 3494
+    Class: Sedan, Probability: 0.63, lbs: 3494
+    Class: Sedan, Probability: 0.65, lbs: 3494
+    Class: Sedan, Probability: 0.67, lbs: 3494
+    Class: Sedan, Probability: 0.61, lbs: 3494
+    Class: Sedan, Probability: 0.65, lbs: 3494
+    Class: Sedan, Probability: 0.66, lbs: 3494
+    Class: Sedan, Probability: 0.58, lbs: 3494
+    Class: Sedan, Probability: 0.62, lbs: 3494
+    Class: Sedan, Probability: 0.64, lbs: 3494
+    Class: Sedan, Probability: 0.54, lbs: 3494
+    Class: Sedan, Probability: 0.58, lbs: 3494
+    Class: Sedan, Probability: 0.62, lbs: 3494
+    Class: Sedan, Probability: 0.65, lbs: 3494
+    Class: Sedan, Probability: 0.58, lbs: 3494
+    Class: Sedan, Probability: 0.61, lbs: 3494
+    Class: Sedan, Probability: 0.58, lbs: 3494
+    Class: Sedan, Probability: 0.57, lbs: 3494
+    Class: Sedan, Probability: 0.59, lbs: 3494
+    Class: Sedan, Probability: 0.56, lbs: 3494
+    Class: Sedan, Probability: 0.56, lbs: 3494
+    Class: Sedan, Probability: 0.57, lbs: 3494
+    Class: Sedan, Probability: 0.54, lbs: 3494
+    Class: Sedan, Probability: 0.55, lbs: 3494
+    Class: Sedan, Probability: 0.57, lbs: 3494
+    Class: Sedan, Probability: 0.55, lbs: 3494
+    Class: Sedan, Probability: 0.57, lbs: 3494
+    Class: Sedan, Probability: 0.58, lbs: 3494
+    Class: Sedan, Probability: 0.64, lbs: 3494
+    Class: Sedan, Probability: 0.63, lbs: 3494
+    Class: Sedan, Probability: 0.65, lbs: 3494
+    Class: Sedan, Probability: 0.61, lbs: 3494
+    Class: Sedan, Probability: 0.62, lbs: 3494
+    Class: Sedan, Probability: 0.62, lbs: 3494
+    Class: Sedan, Probability: 0.59, lbs: 3494
+    Class: Sedan, Probability: 0.61, lbs: 3494
+    Class: Sedan, Probability: 0.55, lbs: 3494
+    Class: Sedan, Probability: 0.59, lbs: 3494
+    Class: Sedan, Probability: 0.60, lbs: 3494
+    Class: Sedan, Probability: 0.52, lbs: 3494
+    Class: Sedan, Probability: 0.57, lbs: 3494
+    Class: Sedan, Probability: 0.58, lbs: 3494
+    Class: Sedan, Probability: 0.52, lbs: 3494
+    Class: Sedan, Probability: 0.51, lbs: 3494
+    Class: Sedan, Probability: 0.55, lbs: 3494
+    Class: Sedan, Probability: 0.59, lbs: 3494
+    Class: Sedan, Probability: 0.62, lbs: 3494
+    Class: Sedan, Probability: 0.56, lbs: 3494
+    Class: Sedan, Probability: 0.58, lbs: 3494
+    Class: Sedan, Probability: 0.56, lbs: 3494
+    Class: Sedan, Probability: 0.56, lbs: 3494
+    Class: Sedan, Probability: 0.55, lbs: 3494
+    Class: Sedan, Probability: 0.53, lbs: 3494
+    Class: Sedan, Probability: 0.50, lbs: 3494
+    Class: Sedan, Probability: 0.53, lbs: 3494
+    Class: Sedan, Probability: 0.53, lbs: 3494
+    Class: Sedan, Probability: 0.53, lbs: 3494
+    Class: Sedan, Probability: 0.53, lbs: 3494
+    Class: Sedan, Probability: 0.64, lbs: 3494
+    Class: Sedan, Probability: 0.61, lbs: 3494
+    Class: Sedan, Probability: 0.61, lbs: 3494
+    Class: Sedan, Probability: 0.60, lbs: 3494
+    Class: Sedan, Probability: 0.60, lbs: 3494
+    Class: Sedan, Probability: 0.57, lbs: 3494
+    Class: Sedan, Probability: 0.58, lbs: 3494
+    Class: Sedan, Probability: 0.57, lbs: 3494
+    Class: Sedan, Probability: 0.49, lbs: 3494
+    Class: Sedan, Probability: 0.49, lbs: 3494
+    Class: Sedan, Probability: 0.56, lbs: 3494
+    Class: Sedan, Probability: 0.54, lbs: 3494
+    Class: Sedan, Probability: 0.52, lbs: 3494
+    Class: Sedan, Probability: 0.51, lbs: 3494
+    Class: Sedan, Probability: 0.57, lbs: 3494
+    Class: Sedan, Probability: 0.57, lbs: 3494
+    Class: Sedan, Probability: 0.56, lbs: 3494
+    Class: Sedan, Probability: 0.55, lbs: 3494
+    Class: Sedan, Probability: 0.39, lbs: 3494
+    Class: Sedan, Probability: 0.39, lbs: 3494
+    Class: Sedan, Probability: 0.45, lbs: 3494
+    Class: Sedan, Probability: 0.48, lbs: 3494
+    Class: Sedan, Probability: 0.43, lbs: 3494
+    Class: Sedan, Probability: 0.47, lbs: 3494
+    Class: Sedan, Probability: 0.40, lbs: 3494
+    Class: Sedan, Probability: 0.47, lbs: 3494
+    Class: Sedan, Probability: 0.50, lbs: 3494
+    Class: Sedan, Probability: 0.56, lbs: 3494
+    Class: Sedan, Probability: 0.58, lbs: 3494
+    Class: Sedan, Probability: 0.53, lbs: 3494
+    Class: Sedan, Probability: 0.56, lbs: 3494
+    Class: Sedan, Probability: 0.60, lbs: 3494
+    Class: Sedan, Probability: 0.56, lbs: 3494
+    Class: Sedan, Probability: 0.59, lbs: 3494
+    Class: Sedan, Probability: 0.54, lbs: 3494
+    Class: Sedan, Probability: 0.50, lbs: 3494
+    Class: Sedan, Probability: 0.52, lbs: 3494
+    Class: Sedan, Probability: 0.58, lbs: 3494
+    Class: Sedan, Probability: 0.59, lbs: 3494
+    Class: Sedan, Probability: 0.56, lbs: 3494
+    Class: Sedan, Probability: 0.57, lbs: 3494
+    Class: Sedan, Probability: 0.61, lbs: 3494
+    Class: Sedan, Probability: 0.58, lbs: 3494
+    Class: Sedan, Probability: 0.60, lbs: 3494
+    Class: Sedan, Probability: 0.56, lbs: 3494
+    Class: Sedan, Probability: 0.41, lbs: 3494
+    Class: Sedan, Probability: 0.48, lbs: 3494
+    Class: Sedan, Probability: 0.47, lbs: 3494
+    Class: Sedan, Probability: 0.50, lbs: 3494
+    Class: Sedan, Probability: 0.45, lbs: 3494
+    Class: Sedan, Probability: 0.49, lbs: 3494
+    Class: Sedan, Probability: 0.44, lbs: 3494
+    Class: Sedan, Probability: 0.34, lbs: 3494
+    Class: Sedan, Probability: 0.46, lbs: 3494
+    Class: Sedan, Probability: 0.47, lbs: 3494
+    Class: Sedan, Probability: 0.45, lbs: 3494
+    Class: Sedan, Probability: 0.46, lbs: 3494
+    Class: Pickup Truck, Probability: 0.99, lbs: 4433
+    Class: Pickup Truck, Probability: 0.99, lbs: 4433
+    Class: Pickup Truck, Probability: 0.99, lbs: 4433
+    Class: Pickup Truck, Probability: 0.99, lbs: 4433
+    Class: Pickup Truck, Probability: 0.99, lbs: 4433
+    Class: Pickup Truck, Probability: 0.99, lbs: 4433
+    Class: Pickup Truck, Probability: 0.99, lbs: 4433
+    Class: Pickup Truck, Probability: 0.99, lbs: 4433
+    Class: Pickup Truck, Probability: 0.99, lbs: 4433
+    Class: Pickup Truck, Probability: 0.99, lbs: 4433
+    Class: Pickup Truck, Probability: 0.99, lbs: 4433
+    Class: Pickup Truck, Probability: 0.99, lbs: 4433
+    Class: Pickup Truck, Probability: 0.99, lbs: 4433
+    Class: Pickup Truck, Probability: 0.99, lbs: 4433
+    Class: Pickup Truck, Probability: 0.99, lbs: 4433
+    Class: Pickup Truck, Probability: 0.99, lbs: 4433
+    Class: Pickup Truck, Probability: 0.99, lbs: 4433
+    Class: Pickup Truck, Probability: 0.99, lbs: 4433
+    Class: Pickup Truck, Probability: 0.99, lbs: 4433
+    Class: Pickup Truck, Probability: 0.99, lbs: 4433
+    Class: Pickup Truck, Probability: 1.00, lbs: 4433
+    Class: Pickup Truck, Probability: 0.99, lbs: 4433
+    Class: Pickup Truck, Probability: 1.00, lbs: 4433
+    Class: Pickup Truck, Probability: 0.99, lbs: 4433
+    Class: Pickup Truck, Probability: 0.99, lbs: 4433
+    Class: Minibus, Probability: 0.92, lbs: 3695
+    Class: Minibus, Probability: 0.92, lbs: 3695
+Traceback (most recent call last):
+  File "C:\Users\Marc Hernandez\Documents\UCLA\ECE 202A\EVMEP\software\Dataset and Model Software\Model Software\pi_cloud_detect_bb_marc.py", line 148, in <module>
+    main()
+  File "C:\Users\Marc Hernandez\Documents\UCLA\ECE 202A\EVMEP\software\Dataset and Model Software\Model Software\pi_cloud_detect_bb_marc.py", line 137, in main
+    draw_boxes(frame, results, class_names)
+  File "C:\Users\Marc Hernandez\Documents\UCLA\ECE 202A\EVMEP\software\Dataset and Model Software\Model Software\pi_cloud_detect_bb_marc.py", line 50, in draw_boxes
+    if obj_score > 0.8:  # Adjust threshold as needed
+KeyboardInterrupt
+out a start chunk; dropping frame.
+[rtsp @ 00000242036734c0] Received packet without a start chunk; dropping frame.
+[rtsp @ 00000242036734c0] Received packet without a start chunk; dropping frame.
+[rtsp @ 00000242036734c0] Received packet without a start chunk; dropping frame.

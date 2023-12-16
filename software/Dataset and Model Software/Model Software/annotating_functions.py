@@ -52,6 +52,32 @@ def draw_box_title(
 
     image_np = draw_bbox(image=image_np, title=title, x1=x1, y1=y1, x2=x2, y2=y2, box_thickness=box_thickness, color=color)
     return image_np
+# def draw_bboxtil_mod(frame, results, class_names):
+#     detections = results['output0'].numpy()[0]  # Convert to numpy and remove batch dimension\
+#     color_mapping = generate_color_mapping(len(class_names))
+#     image = frame.copy()
+#     for detection in detections:
+#         x_center, y_center, width, height, obj_score, *class_probs = detection[:5 + len(class_names)]
+#         image = draw_box_title(image_np=frame,
+#             x1=int(x_center),
+#             y1=int(y_center),
+#             x2=int(width),
+#             y2=int(height),
+#             class_id=np.argmax(class_probs),
+#             class_names=class_names,
+#             color_mapping=color_mapping,
+#             box_thickness=2,
+#             pred_conf=obj_score,
+#         )
+#
+#     # fig = plt.figure(figsize=(8, 8))
+#     # # plt.imshow(image)
+#     # plt.tight_layout()
+#     # # plt.show()
+#     # # plt.imsave(f"C:/Users/Marc Hernandez/Documents/UCLA/ECE 202A/EVMEP/software/software_files/annotated_test_images/{name}",image_me)
+#     # plt.close(fig)
+#     cv2.imshow('Object Detection', image)
+
 
 def draw_bbox(
     image: np.ndarray,

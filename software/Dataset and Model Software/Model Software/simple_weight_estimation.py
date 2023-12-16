@@ -4,7 +4,7 @@ import numpy as np
 
 classes = ['Convertible', 'Crossover', 'Fastback', 'Hardtop Convertible', 'Hatchback', 'MPV', 'Minibus', 'Pickup Truck', 'SUV', 'Sedan', 'Sports', 'Wagon']
 
-data = pd.read_csv('/Users/tilboon/Documents/GitHub/EVMEP/data/csv_dataset_files/avg_weight_on_per_class.csv')
+data = pd.read_csv('/Users/Marc Hernandez/Documents/UCLA/ECE 202A/EVMEP/software/Dataset and Model Software/Dataset Software/avg_weight_on_per_class.csv')
 def estimate_vechicle_weight(car_type_label):
     estimated_mass = 0
     if car_type_label == classes[0]:
