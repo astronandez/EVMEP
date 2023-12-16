@@ -2,10 +2,10 @@
 * Abstract
 * [Introduction](#1-introduction)
 * [Related Work](#2-related-work)
-* [Technical Approach](#3-technical-approach) 
+* [Technical Approach](#3-technical-approach)
 * [Evaluation and Results](#4-evaluation-and-results) 
 * [Discussion and Conclusions](#5-discussion-and-conclusions) 
-* [References](#6-references) X
+* [References](#6-references) 
 
 # Abstract
 
@@ -36,18 +36,33 @@ We selected this dataset primarily because of the large extent of represented ve
 Linjie Yang, Ping Luo, Chen Change Loy, Xiaoou Tang. A Large-Scale Car Dataset for Fine-Grained Categorization and Verification, In Computer Vision and Pattern Recognition (CVPR), 2015. Link: http://mmlab.ie.cuhk.edu.hk/datasets/comp_cars/index.html 
 
 * Carsheet.io
-  * https://carsheet.io/ (Acquired dataset using a web scraping tool with permission from the original author given through email on Nov 16th)
-  * This dataset was used to create a correlation between our vehicle types and their curb weight as defined by the manufacturer. Curb weight refers to the weight of the vehicle without any additional load, including passengers. 
+ * https://carsheet.io/ (Acquired dataset using a web scraping tool with permission from the original author given through email on Nov 16th)
+ * This dataset was used to create a correlation between our vehicle types and their curb weight as defined by the manufacturer. Curb weight refers to the weight of the vehicle without any additional load, including passengers. 
 
-Additionally, for one of our methods (nicla edge detection) we had to train a custom model using not “YOLO” but “FOMO” - Faster Objects More Objects. FOMO is a more recent development and is designed to be a simpler and faster object detection model compared to traditional methods like SSD or YOLO. The primary focus of FOMO is to achieve rapid object detection while maintaining high accuracy, especially in scenarios where there are many objects to detect in an image. It simplifies the architecture and computational process compared to more complex models, which makes it efficient for real-time applications and devices with limited computational resources.
+Additionally, for one of our methods (Nicla edge detection) we had to train a custom model using not “YOLO” but “FOMO” - Faster Objects More Objects. FOMO is a more recent development and is designed to be a simpler and faster object detection model compared to traditional methods like SSD or YOLO. The primary focus of FOMO is to achieve rapid object detection while maintaining high accuracy, especially in scenarios where there are many objects to detect in an image. It simplifies the architecture and computational process compared to more complex models, which makes it efficient for real-time applications and devices with limited computational resources.
 
-We utilized openMV and Edge Impulse to take our custom YOLO dataset and train it to mee the necessary memory requirements to complete object detection on the edge using the nicla vision (model needs to be ~766 KB). This led to a much more inaccurate model, seen in the F1 score below for the trained dataset.
+We utilized openMV and Edge Impulse to take our custom YOLO dataset and train it to mee the necessary memory requirements to complete object detection on the edge using the Nicla vision (model needs to be ~766 KB). This led to a much more inaccurate model, seen in the F1 score below for the trained dataset.
 
 
-<img src="https://github.com/astronandez/EVMEP/blob/main/data/edge_impulse_metrics/f1_score.png" height="600px">
+<img src="https://github.com/astronandez/EVMEP/blob/main/data/edge_impulse_metrics/f1_score.png" height="600px"> 
 
 ### Hardware/Software Technical Approach:
-For our project we had the task of making four implementations of an embedded mass estimation pipeline. 
+For our project we had the task of making four implementations of an embedded mass estimation pipeline. These implementations were as follows:
+
+1. Nicla Vision edge object detection and mass estimation
+2. Nicla Vision edge object detection and mass estimation
+3. Raspberry pi edge object detection and mass estimation
+4. Raspberry pi cloud object detection and mass estimation
+
+As it relates to cloud processing, our approach for both methods was similar.
+
+<img src="https://github.com/astronandez/EVMEP/blob/main/docs/media/cloud_process.png" height="400px">
+
+As seen in this image, we ran scripts locally on the edge device to start an RTSP stream from the local camera (device 0). We then were able to access this camera stream (UDP due to reliability for media transfer) on any cloud or local device (with port forwarding configured) so we could utilize the increased resource capacity to run our object detection models and mass estimation scripts on the image stream. This stream could then be opened on the local device to view the stream with bounding boxes or further scripts were configured to print the outputs directly to the console (to save resources and optimize latency).
+
+To complete this pipeline on the edge for each respective device was quite a different process. As discussed previously, the Nicla Vision has very reduced compute resources and we could not get our model to fit into the available RAM (~766 free KB out of the total 2 MB storage). We ran advanced quantization on tensorflow lite models to reduce the model size to 2 MB but it was not possible. We chose to retrain the model using Edge Impulse and FOMO rather than YOLO. This significantly reduced the model size, but as seen before the accuracy was greatly reduced.
+
+Lastly, to complete this pipeline on the edge for the Raspberry pi4, we adapted a python3 script that utilized openCV-python and tensorflow to run object detection locally on the YOLO tensorflow model used previously. We tested on both a Raspberrypi Camera Module v2 and logitech camera.
 
 # 4. Evaluation and Results
 
@@ -102,6 +117,39 @@ leverage transfer learning to before training our own YOLO_NAS_S model on a cust
 
 Finally, after training our model, we are left with roughly 19.02M parameters, far too big for resources limited platforms. Thus, to circumvent this issue, we apply Quantization Aware Training (QAT) which is a form of quantization that converts FP32 values to UINT8, effectively reducing our model file size to fit under more constricted resources
 
+## Application Results
+
+# Nicla Vision (Edge) Single Car
+
+![](https://github.com/astronandez/EVMEP/blob/main/docs/media/nicla_edge_short_gif.gif)
+
+# Raspberry Pi (Edge) Single car
+
+![](https://github.com/astronandez/EVMEP/blob/main/docs/media/rpi_edge_short_gif.gif)
+
+# Nicla Vision (Edge) Multi-Car
+
+![](https://github.com/astronandez/EVMEP/blob/main/docs/media/nicla_edge_long_gif.gif)
+
+# Raspberry Pi (Edge) Multi-car
+
+![](https://github.com/astronandez/EVMEP/blob/main/docs/media/rpi_edge_long_gif.gif)
+
+# Nicla Vision (Cloud) Single Car
+
+![](https://github.com/astronandez/EVMEP/blob/main/docs/media/nicla_cloud_short_gif.gif)
+
+# Raspberry Pi (Cloud) Single car
+
+![](https://github.com/astronandez/EVMEP/blob/main/docs/media/rpi_cloud_short_gif.gif)
+
+# Nicla Vision (Cloud) Multi-Car
+
+![](https://github.com/astronandez/EVMEP/blob/main/docs/media/nicla_cloud_long_gif.gif)
+
+# Raspberry Pi (Cloud) Multi-car
+
+![](https://github.com/astronandez/EVMEP/blob/main/docs/media/rpi_cloud_long_gif.gif)
 
 # 5. Discussion and Conclusions
 
@@ -112,6 +160,14 @@ From our investigation, we’ve noticed several important factors that will infl
 * Data variety is crucial to its performance; ensuring that there is an even distribution of classes across training, validation, and testing is a must. This will help ensure that there are no overrepresented groups in the dataset that would skew prediction results.
 * When selecting a model, image size, quantity, and resolution will influence its overall size and can be downsized by using quantization techniques and traditional neural network pruning.
 * Even YOLO, at its most miniature format, can still prove to be too large for some platforms like the Nicla Vision regardless of the optimization steps used to reduce the overall model size.
+* The FOMO model for the Nica Vision edge detection was quite inaccurate. We would need to look into ways to optimize our dataset and our dataset training to increase our F1 score and model accuracy.
+
+### Hardware and Software
+* Much of the hardware/software future work is dependent upon the model and training methods used, which we discussed previously.
+* Overall the implementations configured in this project performed very well and in many ways aligned with what we expected. Whenever we tried to add an optimization for latency, this directly affected accuracy and vice versa. It is a constant balance between the need for precision and speed. The RTSP stream to access the data through the cloud worked very well for media streaming. One major issue is the need to have the devices connected to a wireless signal to send and receive data. In real-world applications this could prove to be difficult. Additionally, further work needs to be done to find a more balanced model to train the NIcla Vision edge FOMO model.
+* The cloud methodologies proved to be the most accurate and lowest latency. They do require a higher overhead as you will have to pay for yearly subscriptions to virtual devices (~ $200 - $300 / year). The edge devices were either unrealistically slow (Raspberry pi) or too inaccurate (NIcla Vision). Cloud computing is the optimal methodology for this pipeline.
+
+Future work will be to develop an optimized mass estimation technique to have a more accurate mass estimate. This will be done using Kalman filtering and linear dynamics methods. 
 
 
 # 6. References
@@ -142,3 +198,4 @@ From our investigation, we’ve noticed several important factors that will infl
 [13] Super-Gradients by Deci-AI (https://github.com/Deci-AI/super-gradients)
 
 [14]Pytorch: Paszke, A., Gross, S., Massa, F., Lerer, A., Bradbury, J., Chanan, G., Killeen, T., Lin, Z., Gimelshein, N., Antiga, L., Desmaison, A., Kopf, A., Yang, E., DeVito, Z., Raison, M., Tejani, A., Chilamkurthy, S., Steiner, B., Fang, L., Bai, J., & Chintala, S. (2019).
+
