@@ -10,5 +10,5 @@ Intelligent traffic systems (ITS) are becoming more common as cities continue to
 # Required Submissions
 
 * [Proposal](proposal)
-* [Final Presentation Slides](media/Final-Slide-Deck-for-ECE202M.pptx)
+* [Final Presentation Slides](docs/media/Final Slide Deck for ECE202M.pptx)
 * [Final Report](report)
