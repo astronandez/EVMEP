@@ -106,8 +106,8 @@ def main():
     #rtsp_url =  "rtsp://192.168.1.188:554"
     # rtsp_url = "rtsp://172.91.64.236:8554/unicast"
 
-    rtsp_url = "rtsp://192.168.0.103:8554/unicast"
-    model_path = '/Users/Marc Hernandez/Documents/UCLA/ECE 202A/EVMEP/data/best_tf'
+    rtsp_url = "rtsp://192.168.254.78:8554/unicast"
+    model_path = '/Users/tilboon/Desktop/320x320/best_tf'
     input_size = (320, 320)  # Adjust to your model's input size
 
     cap = cv2.VideoCapture(rtsp_url, cv2.CAP_FFMPEG)
