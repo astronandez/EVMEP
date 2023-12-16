@@ -119,35 +119,39 @@ Finally, after training our model, we are left with roughly 19.02M parameters, f
 
 ## Application Results
 
-# Nicla Vision (Edge) Single Car
+The following gif images are small snippets of our tesing results. We tested our system in two major situations for each device and configuration. The first situation being a single car passes through the scene, how does the system detect and reccognize? The second situation being multiple cars pass through the scene, how does the system detect and recognnize? 
+
+Small snippets of our results can be viewed here but the full videos are in the EVMEP/data/media folder. As seen in these clips, cloud detection is much higher accuracy and has a much lower latency than on the edge. The nicla vision on the edge has the lowest accuracy but it's latency is comparable to that of the edge devices. The Raspberry pi cloud method perform the best, but in the real-world, the Nicla Vision cloud methodology would be the most optimal due to its lower cost, and ease of use.
+
+## Nicla Vision (Edge) Single Car
 
 ![](https://github.com/astronandez/EVMEP/blob/main/docs/media/nicla_edge_short_gif.gif)
 
-# Raspberry Pi (Edge) Single car
+## Raspberry Pi (Edge) Single car
 
 ![](https://github.com/astronandez/EVMEP/blob/main/docs/media/rpi_edge_short_gif.gif)
 
-# Nicla Vision (Edge) Multi-Car
+## Nicla Vision (Edge) Multi-Car
 
 ![](https://github.com/astronandez/EVMEP/blob/main/docs/media/nicla_edge_long_gif.gif)
 
-# Raspberry Pi (Edge) Multi-car
+## Raspberry Pi (Edge) Multi-car
 
 ![](https://github.com/astronandez/EVMEP/blob/main/docs/media/rpi_edge_long_gif.gif)
 
-# Nicla Vision (Cloud) Single Car
+## Nicla Vision (Cloud) Single Car
 
 ![](https://github.com/astronandez/EVMEP/blob/main/docs/media/nicla_cloud_short_gif.gif)
 
-# Raspberry Pi (Cloud) Single car
+## Raspberry Pi (Cloud) Single car
 
 ![](https://github.com/astronandez/EVMEP/blob/main/docs/media/rpi_cloud_short_gif.gif)
 
-# Nicla Vision (Cloud) Multi-Car
+## Nicla Vision (Cloud) Multi-Car
 
 ![](https://github.com/astronandez/EVMEP/blob/main/docs/media/nicla_cloud_long_gif.gif)
 
-# Raspberry Pi (Cloud) Multi-car
+## Raspberry Pi (Cloud) Multi-car
 
 ![](https://github.com/astronandez/EVMEP/blob/main/docs/media/rpi_cloud_long_gif.gif)
 
